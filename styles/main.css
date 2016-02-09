@@ -78,3 +78,10 @@ p a:hover {
     color: #FF7256;
     border: 2px solid #FF7256;
 }
+
+#side {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: -999;
+}

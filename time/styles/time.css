@@ -1,0 +1,160 @@
+@charset "UTF-8";
+/* CSS Document */
+@font-face {
+    font-family: Silkscreen;
+    src: url('../fonts/slkscr-webfont.ttf') format('truetype'),
+        url('../fonts/slkscr-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+    
+*{margin:0px; padding:0px;}
+
+header {
+    position: absolute;
+    top: 0px;
+    padding: 50px 0 10px 0;
+}
+header a {
+    color: #fff;
+    font-family: Silkscreen;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 10pt;
+    padding: 60px 5px 10px 5px;
+    background-color: #CAFF70;
+    color: #424242;
+}
+header a:hover {
+    background-color: #FF6A6A;
+    color: #fff;
+}
+body {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #424242;
+    color: #fff;
+    padding: 50px 0 50px 0;
+}
+
+h1 {
+    width: 400px;
+    margin: 100px 0 10px 0;
+    font-family: Silkscreen;
+    font-size: 36pt;
+}
+p {
+    width: 400px;
+    font-family: Consolas, monospace;
+    font-size: 11pt;
+}
+h2 {
+    font-family: Silkscreen;
+    font-size: 20pt;
+    margin: 25px 0 25px 0;
+}
+#overview {
+    width: 400px;
+}
+ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+img:hover {
+    cursor: pointer;
+}
+#categories {
+    margin-top: 25px;
+}
+#categories li {
+    font-family: Consolas, monospace;
+    font-weight: bold;
+    background-color: #CAFF70;
+    color: #424242;
+    padding: 10px;
+}
+#categories li:hover {
+    background-color: #FF6A6A;
+    cursor: pointer;
+}
+.word {
+    position: relative;
+}
+.tip {
+    position: absolute;
+    top:50px;
+    left:-10px;
+  	width: 100px;
+	color: #424242;
+    background-color: #fff; 
+	font-size: 8pt;
+	padding:2px;
+    font-family: Consolas, monospace;
+}
+#timetable {
+    visibility: hidden;
+    font-family: Consolas, monospace;
+    font-size: 10pt;
+    text-transform: uppercase;
+    position: relative;
+    top: 80px;
+    left: 5px;
+    width: 400px;
+}
+#timetable li {
+    margin-bottom: 10px;
+    width: 250px;
+}
+#clock {
+    width: 500px;
+    position: absolute;
+    top: 150px;
+    right: 200px;
+}
+ol {
+    margin: 25px 10px 25px 0;
+    width: 300px;
+}
+ol li {
+    list-style-type: none;
+    display: inline-block;
+    font-family: Consolas, monospace;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    padding: 2px;
+}
+#clockFace {
+    width: 200px;
+    height: 100px;
+    border: 5px solid #8B8989;
+    background-color: #CDC9C9;
+    margin: 25px 0 0 0;
+}
+#times li span:hover {
+    cursor: pointer;
+    background-color: #FF6A6A;
+    color: #fff;
+}
+#activityList {
+    visibility: hidden;
+    font-family: Consolas, monospace;
+    font-size: 10pt;
+    background-color: #fff; 
+    color: #424242;
+    padding: 10px;
+    margin-bottom: 50px;
+    width: 200px;
+}
+#activityList p {
+    width: 200px;
+    font-size: 10pt;
+    font-weight: bold;
+}
+span {
+    font-weight: bold;
+    background-color: #CAFF70;
+    color: #424242;
+    padding: 2px;
+    margin: 2px;
+    line-height: 20px;
+}

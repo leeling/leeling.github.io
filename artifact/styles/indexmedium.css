@@ -1,0 +1,80 @@
+﻿* {margin: 0; padding: 0;}
+@font-face {
+	font-family: Minecraftia;
+	src: url(../fonts/minecraftia.ttf);
+}
+body {
+	background-image: url("../images/starrybg.jpg");
+	margin: 0 auto;
+	width: 500px;
+}
+
+.container {
+	height: 100%;
+	width: 400px;
+	background-color: rgba(255,255,255,0.95);
+	margin: 0 auto;
+	padding: 3em 3em 0.5em 3em;
+	-webkit-box-shadow: 2px 7px 65px 14px rgba(3,3,3,0.75);
+	-moz-box-shadow: 2px 7px 65px 14px rgba(3,3,3,0.75);
+	box-shadow: 2px 7px 65px 14px rgba(3,3,3,0.75);
+}
+#maintext {
+	margin: 0 auto;
+	width: 350px;
+	padding: 2em 0em 0em 0em;
+}
+h1 {
+	font-size: 40pt;
+	font-family: Minecraftia;
+	line-height: 40pt;
+	color: #FF9912;
+}
+p {
+	font-size: 10pt;
+	font-family: Verdana;
+	color: black;
+	margin-bottom: 2em;
+}
+.button {
+ 	font-family: Minecraftia;
+  	color: #fff;
+  	font-size: 14pt;
+  	background: #FF9912;
+  	padding: 1em 2em 0em 2em;
+  	text-decoration: none;
+}
+.button:hover {
+ 	background: #20B2AA;
+ 	text-decoration: none;
+}
+#enter {
+	text-align: center;
+	margin: 3em 0em 2em 0em;
+}
+#code {
+	text-align: center;
+}	
+#code img {
+	opacity: 0.8;
+	width: 10em;
+}
+#choices {
+	text-align: center;
+}
+ul li {
+	list-style-type: none;
+	padding: 1em 0 1em 0;
+}
+#logo, #space {
+	width: 400px;
+	margin: 0 auto;
+	padding: 0.5em 3em 0.5em 3em;
+	background-color: rgba(255,255,255,0.5);
+	text-align: center;
+	position: relative;
+	z-index: -1;
+}
+#logo img {
+	width: 10em;
+}

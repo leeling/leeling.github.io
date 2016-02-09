@@ -1,0 +1,135 @@
+* {margin: 0; padding: 0;}
+@font-face {
+	font-family: Minecraftia;
+	src: url(../fonts/minecraftia.ttf);
+}
+header {
+	padding-top: 100px;
+	text-align: center;
+}
+h1 {
+	font-size: 40pt;
+	font-family: Minecraftia;
+	color: #fff;
+}
+.button {
+ 	font-family: Minecraftia;
+  	color: #fff;
+  	font-size: 10pt;
+  	background: #FF9912;
+  	padding: 0.5em 2em 0em 2em;
+	margin-bottom: 500px;
+  	text-decoration: none;
+}
+.button:hover {
+ 	background: #20B2AA;
+ 	text-decoration: none;
+}
+.button2 {
+ 	font-family: Minecraftia;
+  	color: #fff;
+  	font-size: 10pt;
+  	background: #20B2AA;
+  	padding: 0.5em 0.5em 0em 0.5em;
+  	text-decoration: none;
+}
+.button2:hover {
+ 	background: #FF9912;
+ 	text-decoration: none;
+}	
+body {
+	background-color: #292421;
+	background-image: url("../images/starrybg.jpg");
+	margin: 0 auto;
+	width: 500px;
+	padding-bottom: 5em;
+}
+ol {
+	list-style-type: none;
+	text-align: center;
+}
+ol li {
+	display: inline-block;
+	margin: 0.5em 0.5em 0.5em 0.5em;
+}
+nav {
+	padding: 2em 0 0 0;
+	display: block;
+	margin: 0 auto;
+	width: 300px;
+}
+#planets {
+	width: 500px;
+	height: 500px;
+	margin: 0 auto;
+	overflow-y: scroll;
+}
+ul {
+	list-style-type: none;
+	width: 300px;
+	display: block;
+	padding-top: 2em;
+	margin: 0 auto;
+}
+ul li {
+	text-align: center;
+	display: block;
+	padding-bottom: 5em;
+}
+li p {
+	text-align: center;
+	font-size: 10pt;
+	font-family: Minecraftia;
+	color: #fff;
+}
+a {
+	text-decoration: none;
+}
+#arrow {
+	display: none;
+}
+#sun {
+	margin-left: -3em;		
+}
+#mercury, #mars {
+	
+}
+#jupiter, #saturn {
+	
+}
+#neptune, #uranus {
+	
+}
+.hvr-grow {
+  display: inline;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+::-webkit-scrollbar {
+    width: 12px;
+} 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: rgba(255,255,255,0.8);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(255,255,255,0.4); 
+}

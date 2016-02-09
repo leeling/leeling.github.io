@@ -1,0 +1,78 @@
+* { margin:0;
+	padding:0;}
+
+body {
+    width: 1100px;
+    margin: 0 auto;
+    font-family: 'Inconsolata', 'Consolas', monospace;
+    background-color: #FF7256;
+}
+header {
+    text-align: center;
+    margin-top: 150px;
+}
+h1 {
+    font-size: 36pt;
+    font-family: 'Comfortaa', 'Helvetica', cursive;
+    color: #FFC125;
+    margin-top: -25px;
+}
+h2 {
+    font-size: 20pt;
+    letter-spacing: 5px;
+    font-family: 'Inconsolata', 'Consolas', monospace;
+    font-variant: small-caps;
+    margin: -10px 0 0 0;
+    color: #fff;
+}
+ul {
+    width: 1100px;
+    margin: 0 auto;
+}
+ul li {
+    display: inline-block;
+    list-style-type: none;
+    vertical-align: middle;
+    text-align: center;
+}
+.hoverText {
+    position: relative;
+    top: 0px;
+    opacity: 0;
+    text-transform: uppercase;
+    font-size: 14pt;
+    color: #fff;
+    font-family: 'Comfortaa', 'Helvetica', cursive;
+    font-weight: bold;
+}
+#description {
+    width: 300px;
+    margin: 0 auto;
+    padding: 0 0 100px 0;
+    color: #fff;
+}
+#itemName {
+    width: 300px;
+    margin: 0 auto;
+    padding: 50px 0 10px 0;
+}
+#stay {
+    display: none;
+}
+footer {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 14pt;
+    font-weight: bold;
+}
+footer a:hover {
+    background-color: #FFC125;
+    color: #FF7256;
+}
