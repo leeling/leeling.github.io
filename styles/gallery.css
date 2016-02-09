@@ -1,0 +1,141 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/* Scrollbar */ 
+
+::-webkit-scrollbar{width: 12px;}
+
+::-webkit-scrollbar-thumb{background-color:rgb(219, 219, 219); border-radius: 0;}
+::-webkit-scrollbar-thumb:hover{background-color:rgb(100, 196, 178);}
+
+::-webkit-scrollbar-track{background-color:rgb(255, 255, 255);}
+
+
+/* End Scrollbar */
+div {
+	margin: 50px 0 0 200px;
+    width: 1000px;
+}
+nav {
+    margin: 200px 0 0 200px;
+}
+nav ul li {
+    display: inline;
+    list-style-type: none;
+    font-variant: small-caps;
+    font-family: Quicksand, Verdana, sans-serif;
+    font-size: 14pt;
+    margin-right: 50px;
+    font-weight: bold;
+}
+ul li a {
+    text-decoration: none;
+    padding: 200px 10px 10px 10px;
+    color: #454545;
+}
+ul li a:hover {
+    background-color: #66CDAA;
+    color: #F5F5F5;
+}
+ol li {
+    list-style-type: none;
+}
+ol li a {
+    font-family: Inconsolata, Consolas, monospace;
+    font-weight: bold;
+    color: #454545;
+    background-color: #F5F5F5;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 1px 5px;
+    border: 2px solid #454545;
+}
+ol li a:hover {
+    color: #66CDAA;
+    border: 2px solid #66CDAA;
+}
+body {
+    font-family: Inconsolata, Consolas, monospace;
+    font-weight: 400;
+    font-size: 11pt;
+    color: #454545;
+    background-color: #F5F5F5;
+}
+body h1 {
+    font-family: Quicksand, Verdana, sans-serif;
+    font-size: 40pt;
+    font-variant: small-caps;
+}
+em {
+    font-style: normal;
+    font-weight: bold;
+}
+
+p a {
+    font-family: Inconsolata, Consolas, monospace;
+    font-weight: bold;
+    color: #454545;
+    background-color: #F5F5F5;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 20px 20px 0;
+    padding: 25px;
+    border: 2px solid #454545;
+}
+p a:hover {
+    background-color: #FFD700;
+    color: #F5F5F5;
+    border-color: #FFD700;
+}
+
+section ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 5px;
+}
+section li img {
+    border: 4px solid transparent;
+}
+section#web, #graphic, #art, #tradart {
+    margin: 0 0 100px 0;
+}
+h3 {
+    margin: 50px 0 10px 0;
+    font-size: 16pt;
+}
+#overlay{
+    position: fixed;
+    width: 0px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    text-align: center;
+    background-color: rgba(255,255,255,0.8);
+    visibility: hidden;
+}
+#overlay button {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    padding: 0 15px 5px 15px;
+    background-color: #fff;
+    border: none;
+    color: #454545;
+    font-family: Quicksand, Verdana, sans-serif;
+    font-size: 30pt;
+    font-weight: bold;
+    -webkit-transition: background 0.5s linear;
+        -moz-transition: background 0.5s linear;
+        -ms-transition: background 0.5s linear;
+        -o-transition: background 0.5s linear;
+        transition: background 0.5s linear;
+}
+#overlay button:hover {
+    color: #66CDAA;
+}

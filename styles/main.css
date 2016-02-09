@@ -1,0 +1,80 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {margin: 0; padding: 0;}
+
+/* Scrollbar */ 
+::-webkit-scrollbar{width: 12px;}
+
+::-webkit-scrollbar-thumb{background-color:rgb(219, 219, 219); border-radius: 0;}
+::-webkit-scrollbar-thumb:hover{background-color:rgb(100, 196, 178);}
+
+::-webkit-scrollbar-track{background-color:rgb(255, 255, 255);}
+/* End Scrollbar */
+
+nav {
+    margin: 200px 0 0 200px;
+}
+nav ul li {
+    display: inline;
+    font-variant: small-caps;
+    font-family: Quicksand, Verdana, sans-serif;
+    font-size: 14pt;
+    margin-right: 50px;
+    font-weight: bold;
+}
+ul li a {
+    text-decoration: none;
+    padding: 200px 10px 10px 10px;
+    color: #454545;
+    background-color: #F5F5F5;
+    transition: background .25s ease-in-out;
+   -moz-transition: background .25s ease-in-out;
+   -webkit-transition: background .25s ease-in-out;
+}
+ul li a:hover {
+    background-color: #66CDAA;
+    color: #F5F5F5;
+}
+section {
+    margin: 50px 0 0 200px;
+}
+section p {
+    width: 350px;
+    line-height: 25px;
+}
+body {
+    font-family: Roboto, Verdana, sans-serif;
+    font-size: 10pt;
+    color: #454545;
+    background-color: #F5F5F5;
+}
+body h1 {
+    font-family: Quicksand, Verdana, sans-serif;
+    font-size: 40pt;
+    font-variant: small-caps;
+}
+em {
+    font-style: normal;
+    font-weight: bold;
+}
+
+p a {
+    font-family: Inconsolata, Consolas, monospace;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 1px 5px;
+    border: 2px solid #454545;
+    color: #454545;
+    background-color: #F5F5F5;
+    border: 2px solid #454545;
+    transition: all .25s ease-in-out;
+   -moz-transition: all .25s ease-in-out;
+   -webkit-transition: all .25s ease-in-out;
+}
+p a:hover {
+    color: #FF7256;
+    border: 2px solid #FF7256;
+}
