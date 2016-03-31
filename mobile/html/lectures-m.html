@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+	   <meta name="author" content="">
+        <title>動漫學術講座 | 台灣動漫畫推廣協會</title>
+              
+        <meta name="viewport" content="width=device-width">
+        <!--link to jquery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <!--link to bigSlide javascript-->
+        <script src="../bigSlide.js"></script>
+        <script>
+        $(document).ready(function() {
+            $('.menu-link').bigSlide();
+            
+            //cut news headlines after certain length
+            $("span.headline").each(function(i){
+                len=$(this).text().length;
+                if(len > 20)
+                {
+                    $(this).text($(this).text().substr(0,20)+'...');
+                }
+            });
+            //show appropriate section on link click
+            $('.abutton').click(function() {
+                var link = $(this).attr('href');
+                var showIt = $(link);
+                var hideIt = $(".show");
+                
+                hideIt.fadeOut(100, function() {
+                    hideIt.removeClass("current");
+                    showIt.addClass("current");
+                    showIt.fadeIn(100);
+                });
+            });
+        });
+        </script>
+        <!--link to css-->
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../bigSlide.css">
+    </head>
+    <body>
+       <!--sliding menu-->
+        <nav id="menu" class="panel" role="navigation">
+             <div id="menuBlock">
+             <a href="#menu" class="menu-link">&#9776;</a>
+             </div>
+        <ul class="mainLinks">
+            <li><a href="../index.html">回首頁 home</a></li>
+            <li><a href="../html/about-m.html">關於我們 about</a></li>
+            <li><a href="../html/contact-m.html">聯絡我們 contact</a></li>
+        </ul>
+        <ul class="sideLinks">
+            <li><h2><a href="../html/publications-m.html">動漫期刊專書出版<br />publications</a></h2></li>
+            <li><h2><a href="../html/events-m.html">動漫文創活動<br />cultural events</a></h2></li>
+            <li><h2><a href="../html/performances-m.html">動漫演出活動<br />live performances</a></h2></li>
+            <li><h2><a href="#">動漫學術講座<br />lectures</a></h2></li>
+            <li><h2><a href="../html/exhibitions-m.html">動漫主題策展<br />themed exhibitions</a></h2></li>
+            <li><h2><a href="../html/competitions-m.html">動漫主題競賽<br />themed competitions</a></h2></li>
+            </ul>
+        </nav>
+        <!--main page content-->
+    <div class="wrap push">
+
+        <a href="#menu" class="menu-link">&#9776;</a>
+        <a id="version" href="../../html/section.html#page6">切換電腦版 desktop version</a>
+        <h1>動漫<br />學術講座</h1>
+        <h3>lectures</h3>
+        <section>
+            <ul class="sublinks">
+                <h4><a href="#misctwo" class="abutton">動漫畫文化講座</a></h4>
+            </ul>
+            <ul class="sublinks">
+                <h4><a href="#miscone" class="abutton">新聞局</a></h4>
+                <li><a href="#miscone" class="abutton">漫畫出版人才專業研習營 99年</a></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="sublinks">
+                <h4><a href="#wenhuathree" class="abutton">文化部國際漫畫研習營</a></h4>
+                <li><a href="#wenhuathree" class="abutton">文化部國際漫畫研習營 102年</a></li>
+                <li><a href="#wenhuatwo" class="abutton">文化部國際漫畫研習營 101年</a></li>
+                <li><a href="#wenhuaone" class="abutton">文化部國際漫畫研習營 100年</a></li>
+            </ul>
+        </section>
+        <article>
+            <div id="misctwo" class="show current">
+                <h4>動漫畫文化講座</h4>
+                <h5>date</h5>
+                <p>待補</p>
+            </div>
+            <div id="miscone" class="show">
+                <h4>新聞局漫畫出版人才專業研習營 (99年)</h4>
+                <h5>date</h5>
+                <p>待補</p>
+            </div>
+            <div id="wenhuathree" class="show">
+                <h4>文化部國際漫畫研習營 102</h4>
+                <h5>2013.06.02~2013.06.30</h5>
+                <p><em>主辦單位</em> 文化部</p>
+                <p><em>承辦單位</em> 杜葳廣告股份有限公司</p>
+                <p><em>協辦單位</em> 台灣動漫畫推廣協會</p>
+                <p>隨著網路世代來臨, 創作者發表的平台從侷限本地一隅轉變為全球市場, 在得到無限可能的同時卻也失去了時空屏障的保護, 面對全新的未來與市場, 台灣漫畫創作者必須調整心態, 接受除了傳統創作方式以外的發展可能。</p>
+                <p>本年度系列課程將藉由課程安排與師資遴選, 帶領學員進入此一命題, 證明漫畫創作有能力從二次元的單色平面藝術, 跨足到三次元、動畫、高科技、音樂、展覽、藝術表現與教育等界面, 也為本土的漫畫創作者提示一個可能的發展方向。</p>
+                <p>本年度師資規劃亦將廣邀台、日、港、星、馬、中國等相關主題之專業講師, 更特別規劃邀請有歐美實務經驗之講師為學員提供從亞洲角度看世界市場的廣域觀點。</p>
+                <p>歷屆課程中廣受好評的分組實作計畫, 在本年度將在主題方面進行大幅度改革, 預定邀請專業藝術策展人指導學員將小組成果規劃為實體的漫畫藝文特展, 並規劃完整的展示時程與展覽空間, 藉由正式的佈展流程實作與展示, 讓學員親身體驗藉由不同媒體平台與閱聽者溝通的技巧與方法。</p>
+                <p>除此之外, 課程中亦將增加前兩屆沒有的新模式「漫畫創作者座談會」, 希望除了講師對學員的單向授課之外, 能夠藉由業界專家多方會談的模式為學員帶來更多的激盪與啟發。</p>
+                <p>隨著台灣本土漫畫創作在世界各大漫畫展發光發熱, 華文動漫市場原創能量與需求日漸復甦, 豐富多元的創作風格與呈現型態成了台灣漫畫最獨特的魅力。結合基礎人才培育與多元漫畫素養的「國際漫畫研習營」系列課程, 期望能夠為台灣漫畫產業提供一個前進的方向。</p>
+                <p>(文字來自於活動網頁)</p>
+            </div>
+            <div id="wenhuatwo" class="show">
+                <h4>文化部國際漫畫研習營 101</h4>
+                <h5>2012.06.03~2012.07.08</h5>
+                <p><em>主辦單位</em> 文化部</p>
+                <p><em>承辦單位</em> 杜葳廣告股份有限公司</p>
+                <p><em>協辦單位</em> 台灣動漫畫推廣協會</p>
+                <p>面對國際作品的強力競爭與文化威脅, 台灣要建立一個自足而完整的產業所涉及的層面相當廣泛, 而創作人才的養成與提升卻永遠是最重要的環節之一。</p>
+                <p>台灣漫畫家於剛結束之法國安古蘭漫畫節中大放異彩, 成為全球焦點。台灣豐富而多元的文化底蘊已培養出許多極具實力的動漫畫創作人才, 但往往無法跨出創作本位去爭取適切的發揮平台。</p>
+                <p>經匯整眾多參加過往新聞局主辦之漫畫研習與講座的學員於問卷與留言中提出的意見, 歸納出如下之主要需求:「想提升自我實力」、「該如何讓自己被看見」。有鑑於此, 本年度課程設定為拓展漫畫多元發展之理念, 以「漫畫家跨出去!」為課程核心主軸, 推出以提升漫畫創作者跨界能力、拓展漫畫異業合作、立足台灣放眼世界為三大特色的「漫畫創作跨界實務精進課程」。</p>
+                <p>本年度課程秉持延續「國際」之中心思想, 除邀請台、日、港澳等相關主題之師資外, 更加入中國大陸漫畫出版方面的專業講師, 提供學員在面對亞洲華文漫畫市場時的不同觀察角度。</p>
+                <p>本年度課程亦延續前屆研習營中廣受歡迎的分組實作計畫, 並依學員建議加以改良, 除精簡小組人數外, 更加長提報分享時間, 讓學員能體驗漫畫創作跨界的多元刺激與行銷自我的實務技巧。</p>
+                <p>隨著台灣本土漫畫創作在世界各大漫畫展覽發光發熱, 豐富多元的創作風格與呈現型態成了台灣漫畫最獨特的魅力。結合基礎人才培育與多元漫畫素養的本系列課程, 必將成為引領台灣漫畫產業前進的重要方向。</p>
+                <p>(文字來自於活動網頁)</p>
+            </div>
+            <div id="wenhuaone" class="show">
+                <h4>文化部國際漫畫研習營 100</h4>
+                <h5>2011.06.12~2011.08.11</h5>
+                <p><em>主辦單位</em> 行政院新聞局</p>
+                <p><em>承辦單位</em> 杜葳廣告股份有限公司</p>
+                <p><em>協辦單位</em> 台灣動漫畫推廣協會</p>
+                <ul>
+                    <li><em>贊助單位</em></li>
+                    <li>遊戲橘子</li>
+                    <li>御茶園</li>
+                    <li>法國在台協會</li>
+                    <li>放電人文數位科技股份有限公司</li>
+                </ul>
+                <p>「漫畫」作為一種新興的娛樂、藝術與文化, 與插畫、動畫、小說、遊戲、電影等各種創作產生了錯綜複雜, 難以分解的關係。</p>
+                <p>在現今的好萊塢, 漫畫更成為電影業救星, 預定於2011年上映的漫畫改編電影就多達十幾部, 漫畫已經成為各國文化與經濟上不可或缺的一部分。日本更是積極利用漫畫輸出文化, 廣受歡迎程度甚至引發各國對於文化侵略的憂慮。</p>
+                <p>面對國際作品的強力競爭與文化侵蝕, 台灣也一直想要建立本土的漫畫產業。但是要建立一個自足而完整的產業所涉及的層面相當廣泛, 而且漫畫產業還涉及到文化部分, 更是與傳統產業有著很大的不同。</p>
+                <p>本次課程是以提升漫畫實務能力為重點, 以漫畫編劇、漫畫編輯、漫畫出版、漫畫產業等方向規劃全方位課程, 除了經驗分享與概念論述外, 更設計了漫畫專案實務規劃的課程, 希望學員可以從實務的操作中更深入體會系列課程的精髓。</p>
+                <p>本系列課程預定邀請台灣、香港、日本漫畫產業界之出版社社長、總編輯、知名漫畫家等傑出人士擔任課程講師, 希望能藉由國際知名動漫從業人員與台灣相關業者進行良好的交流、分享成功經驗, 促進國內動漫畫產業的發展, 並進一步提供政府對相關政策的制定參考。</p>
+                <p>不論是如何切入市場龐大的商機、動畫與漫畫如何連結創造相關產業的最大綜效等, 都是台灣漫畫市場及相關周邊產業所需要的推動經驗, 希望藉由這次的系列課程, 能夠複製其他成功市場的經驗, 為台灣漫畫與其他相關產業的整合創造機會。</p>
+                <p>(文字來自於活動網頁)</p>
+            </div>
+        </article>
+
+    </div>
+    </body>
+</html>

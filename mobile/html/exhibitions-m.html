@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+	   <meta name="author" content="">
+        <title>動漫主題策展 | 台灣動漫畫推廣協會</title>
+              
+        <meta name="viewport" content="width=device-width">
+        <!--link to jquery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <!--link to bigSlide javascript-->
+        <script src="../bigSlide.js"></script>
+        <script>
+        $(document).ready(function() {
+            $('.menu-link').bigSlide();
+            
+            //cut news headlines after certain length
+            $("span.headline").each(function(i){
+                len=$(this).text().length;
+                if(len > 20)
+                {
+                    $(this).text($(this).text().substr(0,20)+'...');
+                }
+            });
+            //show appropriate section on link click
+            $('.abutton').click(function() {
+                var link = $(this).attr('href');
+                var showIt = $(link);
+                var hideIt = $(".show");
+                
+                hideIt.fadeOut(100, function() {
+                    hideIt.removeClass("current");
+                    showIt.addClass("current");
+                    showIt.fadeIn(100);
+                });
+            });
+        });
+        </script>
+        <!--link to css-->
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../bigSlide.css">
+    </head>
+    <body>
+       <!--sliding menu-->
+        <nav id="menu" class="panel" role="navigation">
+             <div id="menuBlock">
+             <a href="#menu" class="menu-link">&#9776;</a>
+             </div>
+        <ul class="mainLinks">
+            <li><a href="../index.html">回首頁 home</a></li>
+            <li><a href="../html/about-m.html">關於我們 about</a></li>
+            <li><a href="../html/contact-m.html">聯絡我們 contact</a></li>
+        </ul>
+        <ul class="sideLinks">
+            <li><h2><a href="../html/publications-m.html">動漫期刊專書出版<br />publications</a></h2></li>
+            <li><h2><a href="../html/events-m.html">動漫文創活動<br />cultural events</a></h2></li>
+            <li><h2><a href="../html/performances-m.html">動漫演出活動<br />live performances</a></h2></li>
+            <li><h2><a href="../html/lectures-m.html">動漫學術講座<br />lectures</a></h2></li>
+            <li><h2><a href="#">動漫主題策展<br />themed exhibitions</a></h2></li>
+            <li><h2><a href="../html/competitions-m.html">動漫主題競賽<br />themed competitions</a></h2></li>
+            </ul>
+        </nav>
+        <!--main page content-->
+    <div class="wrap push">
+
+        <a href="#menu" class="menu-link">&#9776;</a>
+        <a id="version" href="../../html/section.html#page7">切換電腦版 desktop version</a>
+        <h1>動漫<br />主題策展</h1>
+        <h3>themed exhibitions</h3>
+        <section>
+            <ul class="sublinks">
+                <h4><a href="#fifteentwo" class="abutton">2015</a></h4>
+                <li><a href="#fifteentwo" class="abutton">原繪聲影</a></li>
+                <li><a href="#fifteenone" class="abutton">新北‧南島原貌</a></li>
+            </ul>
+            <ul class="sublinks">
+                <h4><a href="#fourteenone" class="abutton">2014</a></h4>
+                <li><a href="#fourteenone" class="abutton">原民‧印象</a></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="sublinks">
+                <h4><a href="#thirteenone" class="abutton">2013</a></h4>
+                <li><a href="#thirteenone" class="abutton">艾雷迪創作紀念展</a></li>
+            </ul>
+            <ul class="sublinks">
+                <h4><a href="#twelvetwo" class="abutton">2012</a></h4>
+                <li><a href="#twelvetwo" class="abutton">跨越疆界</a></li>
+                <li><a href="#twelveone" class="abutton">桃園國際動漫大展</a></li>
+            </ul>
+        </section>
+        <article>
+            <div id="fifteentwo" class="show current">
+                <h4>原繪聲影 原住民族主題繪本暨動漫特展</h4>
+                <h5>2015.09.04~2015.11.30</h5>
+                <p><em>地點</em> 台北市北投區中山路3-1號 (凱達格蘭文化館)</p>
+                <p>台灣的原民主題藝術在流行音樂、影視媒體方面向來都是對世界發聲的利器, 近年來原民主題之動畫、漫畫也逐漸獲得國際關注: 以電影《賽德克．巴萊》漫畫原著聞名國際的漫畫家邱若龍先生, 已於2013年9月由法國Akata出版社發行「漫畫巴萊」法文版。台灣的原民主題圖像藝術更於2015年2月受邀於國際動漫勝地「安古蘭國際漫畫節」推出「南島原貌特展」, 成功以台灣原圖像藝術進行國際文化推廣。為將享譽國際之原民圖像藝術推廣給更多一般民眾了解, 特別規劃了本次展出。以一般大眾能接受的動漫語言, 以平面、立體、影音等多媒體方式進行展出, 搭配講座、工作坊等互動活動。本展預定以「凱達格蘭文化館」所在地北投傳說中的「凱達格蘭女巫」為展出核心, 同時蒐羅不同原民族群中與「魔法」、「幻想」相關之圖像藝術創作; 邀請展品包含原民主題之漫畫、動畫、繪本⋯⋯等跨領域創作媒體, 表現出原民主題充滿可能性的特質。本展亦將設置專區介紹世新大學視覺傳達系原住民專班學生的作品, 讓本展能同時納入產、學之不同面向, 成為全方位之綜合型原民藝術展。</p>
+            </div>
+            <div id="fifteenone" class="show">
+                <h4>「新北‧南島原貌」特展</h4>
+                <h5>2015.01.01~2015.01.25</h5>
+                <p><em>地點</em> 新北市板橋 435 藝文特區新海館</p>
+                <p>新北市原住民鮮豔的編織、紋面藝術、祖靈信仰, 都與漫畫結合, 2015年1月29日即將在法國安古蘭國際漫畫節登場! 這些深具台灣原民風貌的作品, 搶先於板橋435藝文特區的行前展中與民眾見面。</p>
+                <p>國際漫畫界的年度盛事「法國安古蘭國際漫畫節」, 今年將邀請新北市政府原住民族行政局所策劃的「新北‧南島原貌」— 原民漫畫主題特展參展。包含深受國內外矚目的漫畫家邱若龍的《漫畫巴萊》, 以及新北市新銳的原民漫畫家作品, 都會在「新北‧南島原貌」特展展出。</p>
+                <p>獨特的紋面文化、豐年祭、神話傳說、部落圖騰等, 將在歐洲與全球漫畫愛好者眼前展示, 為明年的安古蘭漫畫節, 增添更多台灣原民色彩。透過『新北‧南島原貌』的展出, 希望能吸引更多國際創作者來台取材, 讓台灣原民獨特的文化樣貌更廣泛地被國際社會認識。</p>
+            </div>
+            <div id="fourteenone" class="show">
+                <h4>「原民‧印象」台灣原住民圖像藝術創作展</h4>
+                <h5>2014.08.11~2014.08.23</h5>
+                <p><em>地點</em> 新北市政府1樓大廳 (中廊)</p>
+                <ul>
+                    <li><em>參展藝術家名單</em></li>
+                    <li><em>【創作原民】展區</em> 邱若龍／小雪／林迺晴／KoKai／BcNy／Salah.D</li>
+                    <li><em>【原民創作】展區</em> 韋蘺若明／祅風</li>
+                    <li><em>【影音原民】展區</em> 東南科技大學數位媒體設計系／世新大學數位多媒體學系原民班</li>
+                    <li><em>【經典原民】展區</em> 郭掌從／黃飛／曾孝德</li>
+                </ul>
+                <p>本次展出預定以「原民‧印象」為策展主題, 現場共分「創作原民」、「原民創作」、「影音原民」以及「經典原民」四個展區, 以以靜態、影音及實體文物等不同的形式與媒介, 為觀眾帶來全新的感受體驗! 展出作品將分為「以原住民為主題的作品」以及「具原住民身分之創作者」兩大類型, 蒐羅各族群之圖像藝術作品; 展覽中亦將設置專區介紹目前各級學校與視覺藝術相關之原住民學生作品, 讓本展覽能同時納入產、官、學三種面向, 成為全方位之綜合型原民藝術展。</p>
+            </div>
+            <div id="thirteenone" class="show">
+                <h4>府中15動漫故事館「艾雷迪創作紀念展」</h4>
+                <h5>2013.03.29~2013.06.02</h5>
+                <p><em>地點</em> 新北市府中15動畫故事館</p>
+                <p>他是漫畫家, 插畫家, 教育家, 也是傑出的藝術家, 他為創作燃盡一生, 留下大量讓人驚艷的作品, 每一筆線條都是生命的延伸, 每一幅畫作都是寫給這個世界的情書, 讓我們跟著卡布的足跡, 一起走進艾雷迪的創作世界…</p>
+                <p><em>iCappu's Sky—艾雷迪創作紀念展</em></p>
+            </div>
+            <div id="twelvetwo" class="show">
+                <h4>跨越疆界 府中15動漫之間特展</h4>
+                <h5>2012.12.20~2013.03.03</h5>
+                <p><em>地點</em> 新北市府中15動畫故事館</p>
+                <ul>
+                    <li><em>參展藝術家名單</em></li>
+                    <li><em>【動漫之森】展區</em> 邱若龍／陳弘耀／傑利小子／艾雷迪／李隆杰／韋宗成／睫毛／余品翰／紀敦智／幻想堂</li>
+                    <li><em>【動漫之音】展區</em> 滾石音樂愛情故事／小倉電子／《精靈幻想鄉》遊戲APP</li>
+                    <li><em>【動漫之光】展區</em> 邱若龍／艾雷迪／黃興良／NANA／文瀾資訊／肯特動畫／游凱麟／柏阿橘／神人、毛怪／世新大學數位多媒體學系</li>
+                </ul>
+                <p>動畫與漫畫之間有什麼看不見的秘密? 漫畫家們如何創作出動人的畫作? 跨越動漫畫兩大領域．國內外資深與新生代的數十位人氣動漫藝術家們, 將作品名場面具體再現的同時, 也將作品誕生的環境以及靈感之源一一呈現在您眼前!</p>
+            </div>
+            <div id="twelveone" class="show">
+                <h4>2012 桃園國際動漫大展</h4>
+                <h5>2012.07.13~2012.8.19</h5>
+                <p><em>地點</em> 桃園縣展演中心</p>
+                <ul>
+                    <li><em>活動內容</em></li>
+                    <li>同人誌即售</li>
+                    <li>角色扮演活動</li>
+                    <li>動漫相關商品展售</li>
+                    <li>動漫相關日本嘉賓來訪</li>
+                </ul>
+                <p><em>特別來賓</em> 速水獎</p>
+                <p>本次活動的全名為「2012桃園國際動漫大展—桃園遊動漫嘉年華」, 這是舉辦日期由7月13日至8月19日長達5週的大型動漫活動展覽, 地點為桃園縣多功能展演中心1樓，展覽內容有靜態的常態展覽「動漫的銘刻與解碼: 動漫文化美學特展」, 銘刻(Decade) 是對於記憶與時間的敬意, 而解碼 (Decode) 則是分解與理解的行動, 因此「動漫的銘刻與解碼」, 試圖運用時間性與記憶性, 呈現動漫文化的解構與過程, 運用展出的方式進行彼此的對話與呈現。此展區分成六大展區, 分別為「動漫名家電繪展」、「動漫程式碼」、「如果阿宅讀了吉爾‧德勒茲」、「緊急発進～地上最大機器人」、「遊動漫閱讀格納庫」、「銘刻動畫影展」等等, 其中除了傳統的漫畫插畫家畫作、大小模型、個人製作動畫的展示, 也有結合動漫與當代藝術而成的特別展覽, 另外包括國內製作機器人的祥儀、大宇遊戲公司、未來數位等多家國內廠商也一同參與盛會。</p>
+                <p>(關於「動漫文化美學特展」的詳細內容可參考8月號的介紹)</p>
+            </div>
+        </article>
+
+    </div>
+    </body>
+</html>

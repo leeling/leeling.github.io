@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+	   <meta name="author" content="">
+        <title>動漫主題競賽 | 台灣動漫畫推廣協會</title>
+              
+        <meta name="viewport" content="width=device-width">
+        <!--link to jquery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <!--link to bigSlide javascript-->
+        <script src="../bigSlide.js"></script>
+        <script>
+        $(document).ready(function() {
+            $('.menu-link').bigSlide();
+            
+            //cut news headlines after certain length
+            $("span.headline").each(function(i){
+                len=$(this).text().length;
+                if(len > 20)
+                {
+                    $(this).text($(this).text().substr(0,20)+'...');
+                }
+            });
+            //show appropriate section on link click
+            $('.abutton').click(function() {
+                var link = $(this).attr('href');
+                var showIt = $(link);
+                var hideIt = $(".show");
+                
+                hideIt.fadeOut(100, function() {
+                    hideIt.removeClass("current");
+                    showIt.addClass("current");
+                    showIt.fadeIn(100);
+                });
+            });
+        });
+        </script>
+        <!--link to css-->
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../bigSlide.css">
+    </head>
+    <body>
+       <!--sliding menu-->
+        <nav id="menu" class="panel" role="navigation">
+             <div id="menuBlock">
+             <a href="#menu" class="menu-link">&#9776;</a>
+             </div>
+        <ul class="mainLinks">
+            <li><a href="../index.html">回首頁 home</a></li>
+            <li><a href="../html/about-m.html">關於我們 about</a></li>
+            <li><a href="../html/contact-m.html">聯絡我們 contact</a></li>
+        </ul>
+        <ul class="sideLinks">
+            <li><h2><a href="../html/publications-m.html">動漫期刊專書出版<br />publications</a></h2></li>
+            <li><h2><a href="../html/events-m.html">動漫文創活動<br />cultural events</a></h2></li>
+            <li><h2><a href="../html/performances-m.html">動漫演出活動<br />live performances</a></h2></li>
+            <li><h2><a href="../html/lectures-m.html">動漫學術講座<br />lectures</a></h2></li>
+            <li><h2><a href="../html/exhibitions-m.html">動漫主題策展<br />themed exhibitions</a></h2></li>
+            <li><h2><a href="#">動漫主題競賽<br />themed competitions</a></h2></li>
+            </ul>
+        </nav>
+        <!--main page content-->
+    <div class="wrap push">
+
+        <a href="#menu" class="menu-link">&#9776;</a>
+        <a id="version" href="../../html/section.html#page8">切換電腦版 desktop version</a>
+        <h1>動漫<br />主題競賽</h1>
+        <h3>themed competitions</h3>
+        <section>
+            <ul class="sublinks">
+                <h4><a href="#storyfive" class="abutton">開拓極短篇原創大賞</a></h4>
+                <li><a href="#storyfive" class="abutton">開拓極短篇原創大賞 2016</a></li>
+                <li><a href="#storyfour" class="abutton">開拓極短篇原創大賞 2015</a></li>
+                <li><a href="#storythree" class="abutton">開拓極短篇原創大賞 2014</a></li>
+                <li><a href="#storytwo" class="abutton">開拓極短篇原創大賞 2013</a></li>
+                <li><a href="#storyone" class="abutton">開拓極短篇原創大賞 2012</a></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="sublinks">
+                <h4><a href="#fashiontwo" class="abutton">郵局漫畫創意郵務服裝設計</a></h4>
+            </ul>
+            <ul class="sublinks">
+                <h4><a href="#fashionone" class="abutton">台灣啤酒漫畫服裝設計</a></h4>
+            </ul>
+        </section>
+        <article>
+            <div id="storyfive" class="show current">
+                <h4>開拓極短篇原創大賞 2016</h4>
+                <h5>2016.06.15</h5>
+                <p><em>指導單位</em> 文化部</p>
+                <p><em>主辦單位</em> 開拓動漫事業有限公司．開拓動漫祭</p>
+                <p><em>協辦單位</em> 聯成電腦、Animen動漫平台、布卡漫畫、日更COMICS</p>
+                <p><em>收件截止日期</em> 105年6月15日23:59前</p>
+                <p>第五屆的「開拓極短篇原創大賞」今年在漫畫組規則上有了重大變更, 更加入了新的合作夥伴! 將仍秉持推廣優秀原創人才、協助同人場內作者們開創未來的願景, 希望能發掘更多優秀作者。強者們, 歡迎前來參加!</p>
+                <p>本屆比賽共分「漫畫」、「插畫」與「行動漫畫」三組, 入選者除可獲得獎金、獎品外, 作品還將發表在有數萬人次閱覽的「開拓動漫祭活動場刊」, 與「Animen動漫平台」、「布卡漫畫」的《日更COMICS》專區上, 所有的入選作品並將集結成推廣專刊, 於2016暑假場的FF28首賣, 得獎作者也將成為開拓系列場刊、開拓動漫畫情報誌的優先邀稿作者喔! 此外, 漫畫組首獎者將可以在《日更COMICS》上提案並刊載一部42～50頁的短篇作品, 並會有編輯協助, 視日後讀者反應, 將可獲得正式連載的提案與簽約機會!</p>
+            </div>
+            <div id="storyfour" class="show">
+                <h4>開拓極短篇原創大賞 2015</h4>
+                <h5>2015.06.01</h5>
+                <p><em>指導單位</em> 文化部</p>
+                <p><em>主辦單位</em> 開拓動漫事業有限公司．開拓動漫祭</p>
+                <p><em>協辦單位</em> 聯成電腦</p>
+                <p><em>贊助單位</em> 上奇科技</p>
+                <p><em>收件截止日期</em> 104年6月1日前</p>
+                <p>開拓極短篇原創大賞今年堂堂邁入第四年! 第四屆的「開拓極短篇原創大賞」除將秉持推廣優秀原創人才、協助同人場內作者們開創未來的願景, 更大幅提高各組獎金, 希望能發掘更多優秀作者。強者們, 歡迎前來掄元!</p>
+                <p>本屆比賽共分「漫畫」、「插畫」與「手機漫畫」三組, 入選者除可獲得獎金、獎品外, 作品還將發表在有數萬人次閱覽的「開拓動漫祭活動場刊」上, 所有的入選作品並將集結成推廣專刊, 於2015暑假場的FF26首賣, 得獎作者也將成為開拓系列場刊、開拓動漫畫情報誌的優先邀稿作者喔!</p>
+                <p>想一舉擄獲數萬名動漫迷的眼光嗎? 想優先獲得被推薦到國內外各出版單位的機會嗎? 請務必參加本次極短篇大賞, 讓作品帶你進入更廣大的世界!</p>
+            </div>
+            <div id="storythree" class="show">
+                <h4>開拓極短篇原創大賞 2014</h4>
+                <h5>2014.06.02</h5>
+                <p><em>指導單位</em> 文化部</p>
+                <p><em>主辦單位</em> 開拓動漫事業有限公司．開拓動漫祭</p>
+                <p><em>協辦單位</em> 聯成電腦</p>
+                <p><em>贊助單位</em> 上奇科技</p>
+                <p><em>收件截止日期</em> 103年6月2日前</p>
+                <p>開拓動漫系列活動長年推動台灣原創漫畫, 集合專業的編輯、企劃與行銷人才, 輔導台灣有潛力的同人誌創作者進行轉型。透過選秀比賽、作品修改、全方位的宣傳與推廣、實體書籍的出版與市場行銷等計畫, 完整涵蓋出版產業鏈上下游。不但協助資源較微匱乏的獨立漫畫出版者發表作品, 同時也協助創作者行銷自己, 讓創作者除了加入傳統出版系統的選擇之外, 也有機會成為優秀的獨立出版者, 進而提升台灣整體的漫畫創作能量。</p>
+                <p>今年, 開拓動漫系列活動推出「第三屆開拓極短篇原創大賞」!! 希望推廣優秀原創人才、協助同人場內作者們開創未來的願景能持久延續下去!</p>
+                <p>本屆比賽共分「漫畫」、「插畫」與「手機漫畫」三組, 入選者可獲得獎金、獎品外, 並提供免費參與24小時聯成電腦精英培訓班等機會! 除此之外, 作品將發表在有數萬人次閱覽的「開拓動漫祭活動場刊」上, 所有的入選作品並將集結成推廣專刊於2014暑假場FF24首賣, 得獎作者也將成為開拓系列場刊的優先邀稿作者喔!</p>
+                <p>想一舉擄獲數萬名動漫迷的眼光嗎? 想優先獲得被推薦到國內外各出版單位的機會嗎? 請務必參加本次極短篇大賞, 讓作品帶你進入更廣大的世界!</p>
+            </div>
+            <div id="storytwo" class="show">
+                <h4>開拓極短篇原創大賞 2013</h4>
+                <h5>2013.06.03</h5>
+                <p><em>指導單位</em> 文化部</p>
+                <p><em>主辦單位</em> 開拓動漫事業有限公司．開拓動漫祭</p>
+                <p><em>協辦單位</em> 聯成電腦</p>
+                <p><em>贊助單位</em> 上奇科技•WACOM</p>
+                <p><em>收件截止日期</em> 102年6月3日前</p>
+                <p>原創漫畫在2012年可說是豐收的一年, 長年推動台灣原創漫畫的FF活動在2012年舉辦了以宣傳優秀創作者為目標的「第一屆開拓極短篇原創大賞」! 透過簡短有力的劇情去感動讀者與傳遞自己的創作意念, 除了獎金與作品出版機會外, FF籌備委員會亦有系統地規劃一連串推廣活動, 至今成果斐然並獲得大量迴響。</p>
+                <p>今年, 開拓動漫祭繼續推出「第二屆開拓極短篇原創大賞」!! 希望推廣優秀原創人才、協助同人場內作者們開創未來的願景能持久延續下去!</p>
+                <p>除了延續第一屆的「漫畫」與「插畫」兩組之外, 為因應漫畫未來的趨勢, 第二屆在獎項方面新增「手機漫畫」組, 入選者可獲得獎金、獎品外, 並提供免費參與24小時聯成電腦精英培訓班等機會!除此之外, 作品將發表在有數萬人次閱覽的「FF22活動場刊」上, 所有的入選作品並將集結成推廣專刊於FF22首賣, 入選作者也將成為開拓系列場刊的優先邀稿作者喔!</p>
+                <p>想一舉擄獲數萬名動漫迷的眼光嗎? 想優先獲得被推薦到國內外各出版單位的機會嗎? 請務必參加本次的極短篇大賞, 讓作品帶你進入更廣大的世界!</p>
+            </div>
+            <div id="storyone" class="show">
+                <h4>開拓極短篇原創大賞 2012</h4>
+                <h5>2012.06.08</h5>
+                <p><em>指導單位</em> 行政院新聞局</p>
+                <p><em>主辦單位</em> 開拓動漫事業有限公司．開拓動漫祭</p>
+                <p><em>收件截止日期</em> 101年6月8日前</p>
+                <p>原創漫畫要如何獲得重視呢? 長年推動台灣原創漫畫的FF活動, 在邁入十週年的此時有了新的願景, 決定自今年開始集結活動之充沛能量, 舉辦以宣傳優秀創作者為目標的「開拓極短篇原創大賞」!</p>
+                <p>開拓動漫祭活動每次都能吸引各界的目光, 籌備委員會願將此一能量分享給所有的同人作者, 除了提供一個眾所矚目的舞台之外, 並有系統地規劃後續ㄧ連串推廣活動, 目的在協助同人會場內的優秀作者們能夠開創更燦爛的可能性!</p>
+                <p>比賽共分「漫畫」與「插畫」兩組, 入選者除了可贏得獎金、獎品之外, 首獎作品還能發表在有數萬人次閱覽的《FF20活動場刊》上, 所有的入選作品並將集結成推廣專刊於FF20首賣, 入選作者也將成為開拓系列場刊的優先邀稿作者喔!</p>
+                <p>想一舉擄獲數萬名動漫迷的眼光嗎? 想優先獲得被推薦到國內外各出版單位的機會嗎? 請務必參加本次的極短篇大賞, 讓作品帶你進入更廣大的世界!</p>
+            </div>
+            <div id="fashiontwo" class="show">
+                <h4>郵局漫畫創意郵務服裝設計</h4>
+                <h5>2016.03.10~2016.04.29</h5>
+                <p><em>比賽主題</em> 結合動漫畫空想風格, 原創設計之新世代郵務服裝</p>
+                <p><em>主辦單位</em> 中華郵政股份有限公司臺北郵局、開拓動漫</p>
+                <p><em>徵稿時間</em> 2016年3月10日起，至2016年4月29日止</p>
+                <p>公開徵求國內動漫畫創作人才, 以不受拘束的新一代動漫概念, 設計「功能性郵務服裝」, 展現造型創意, 參賽作品預定於「亞洲動漫創作展PF24」(2016年5月7、8日舉辦) 現場展示, 並配合2016年度郵政活動之宣傳及展出。得獎作品預定將會製成實際服裝, 於今年暑假展出!</p>
+            </div>
+            <div id="fashionone" class="show">
+                <h4>台灣啤酒漫畫服裝設計</h4>
+                <h5>date</h5>
+                <p>待補</p>
+            </div>
+        </article>
+
+    </div>
+    </body>
+</html>

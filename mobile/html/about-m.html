@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+	   <meta name="author" content="">
+        <title>關於我們 | 台灣動漫畫推廣協會</title>
+              
+        <meta name="viewport" content="width=device-width">
+        <!--link to jquery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <!--link to bigSlide javascript-->
+        <script src="../bigSlide.js"></script>
+        <script>
+        $(document).ready(function() {
+            $('.menu-link').bigSlide();
+            
+            //cut news headlines after certain length
+            $("span.headline").each(function(i){
+                len=$(this).text().length;
+                if(len > 20)
+                {
+                    $(this).text($(this).text().substr(0,20)+'...');
+                }
+            });
+            //show appropriate section on link click
+            $('.abutton').click(function() {
+                var link = $(this).attr('href');
+                var showIt = $(link);
+                var hideIt = $(".show");
+                
+                hideIt.fadeOut(100, function() {
+                    hideIt.removeClass("current");
+                    showIt.addClass("current");
+                    showIt.fadeIn(100);
+                });
+            });
+        });
+        </script>
+        <!--link to css-->
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../bigSlide.css">
+    </head>
+    <body>
+       <!--sliding menu-->
+        <nav id="menu" class="panel" role="navigation">
+             <div id="menuBlock">
+             <a href="#menu" class="menu-link">&#9776;</a>
+             </div>
+        <ul class="mainLinks">
+            <li><a href="../index.html">回首頁 home</a></li>
+            <li><a href="#">關於我們 about</a></li>
+            <li><a href="../html/contact-m.html">聯絡我們 contact</a></li>
+        </ul>
+        <ul class="sideLinks">
+            <li><h2><a href="../html/publications-m.html">動漫期刊專書出版<br />publications</a></h2></li>
+            <li><h2><a href="../html/events-m.html">動漫文創活動<br />cultural events</a></h2></li>
+            <li><h2><a href="../html/performances-m.html">動漫演出活動<br />live performances</a></h2></li>
+            <li><h2><a href="../html/lectures-m.html">動漫學術講座<br />lectures</a></h2></li>
+            <li><h2><a href="../html/exhibitions-m.html">動漫主題策展<br />themed exhibitions</a></h2></li>
+            <li><h2><a href="../html/competitions-m.html">動漫主題競賽<br />themed competitions</a></h2></li>
+            </ul>
+        </nav>
+        <!--main page content-->
+    <div class="wrap push">
+
+        <a href="#menu" class="menu-link">&#9776;</a>
+        <a id="version" href="../../html/section.html#page1">切換電腦版 desktop version</a>
+        <h1>關於我們</h1>
+        <h3>about us</h3>
+        <section>
+            <ul class="sublinks">
+                <h4><a href="#">台灣動漫推廣協會</a></h4>
+                <li><a href="#tacpa-about" class="abutton">協會簡介</a></li>
+                <li><a href="#tacpa-f" class="abutton">開拓動漫祭系列活動</a></li>
+                <li><a href="#tacpa-d" class="abutton">原創漫畫推廣活動</a></li>
+                <li><a href="#tacpa-l" class="abutton">動漫畫相關講座系列</a></li>
+                <li><a href="#tacpa-g" class="abutton">名家畫展系列</a></li>
+                <li><a href="#tacpa-c" class="abutton">動漫畫演唱會系列</a></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="sublinks">
+                <h4><a href="#">杜葳廣告股份有限公司</a></h4>
+                <li><a href="#company-about" class="abutton">公司簡介</a></li>
+                <li><a href="#company-p" class="abutton">動漫品牌活動／出版品</a></li>
+                <li><a href="#company-g" class="abutton">地方政府動漫主題專案</a></li>
+                <li><a href="#company-e" class="abutton">漫畫主題相關活動</a></li>
+            </ul>
+        </section>
+        <article>
+            <div id="tacpa-about" class="show current">
+                <h5>台灣動漫推廣協會簡介</h5>
+                <p>本會成立於2003年9月, 主要以國內外動漫文化研究、推廣為主。會員構成主要為動漫產業從業人員、編輯、研究學者。<br />業務範圍包括出版動漫畫情報雜誌、動漫研究專書、動漫精選畫冊; 舉辦動漫同人展售會、動漫文化講座、動漫主題策展、動漫音樂會、流行動漫演唱會、原創漫畫比賽、Cosplay比賽等等。<br />本會亦接受文化部、新北市政府、桃園縣政府、宜蘭縣政府、台中市政府、高雄市政府等公家單位以及郵局、台啤、宏碁等私人單位委託承辦動漫相關活動。</p>
+            </div>
+            <div id="tacpa-f" class="show">
+                <h5>開拓動漫祭系列活動</h5>
+                <p>「Fancy Frontier開拓動漫祭」(簡稱FF) 是為了能創造一個讓漫畫創作者、動漫愛好者以及Cosplayer都能歡樂參與而創辦的優質活動。<br />也希望藉由本活動, 能夠讓一般社會大眾對於動漫畫創作、動漫畫愛好者的觀點趨向正面。以及更重要的, 維護本土漫畫界僅存的創作火苗, 並協助其逐漸茁壯起來。<br />2002年10月舉辦第一屆, 以「擁有Comiket般旺盛的創作交流氣氛, 以及漫畫博覽會般豐沛的商機」為目標, 固定於每年寒暑假盛大舉行的動漫畫嘉年華會。<br />FF場內每屆都有千餘個漫畫創作團體於現場發表、展售原創、二創的漫畫創作。每場活動也會邀請日本動畫工作者、聲優或漫畫創作者, 在會場進行座談會、簽名會或Mini Live。此外也有各種各樣的舞台活動或特色展覽, 讓所有的參加者都對活動留下難忘的回憶。<br />FF主要參加者為動漫愛好者族群中的核心成員, 特色為具有較高的單位消費力及鑑賞力。FF原則上分別在每年寒假與暑假的週末舉行。</p>
+            </div>
+            <div id="tacpa-d" class="show">
+                <h4>原創漫畫推廣活動</h4>
+                <h5>原創作品交流會ComicNova</h5>
+                <p>台灣唯一原創作品交流大會, 提供包含漫畫、插畫、音樂、小說、遊戲等所有原創作品的發表交流平台, 並成為國內出版社積極尋訪人才的活動。</p>
+                <h5>原創刊物出版補助計畫</h5>
+                <p>舉辦多次獨立出版之原創漫畫刊物補助計畫, 提供創作者出版資源與協助宣傳。</p>
+            </div>
+            <div id="tacpa-l" class="show">
+                <h4>動漫畫相關講座系列</h4>
+                <h5>台灣國際漫畫研習營</h5>
+                <p><em>緣起與歷史</em> 面對國際作品的強力競爭與文化侵蝕, 台灣一直想要建立本土的漫畫產業。但是要建立一個自足而完整的產業所涉及的層面相當廣泛, 而且漫畫產業還涉及到文化部分, 與傳統產業有著很大的不同。</p>
+                <p>研習營舉辦之契機, 希望能藉由國際知名動漫從業人員與台灣相關業者進行良好的交流、分享成功經驗, 促進國內動漫畫產業的發展, 並進一步提供政府對相關政策的制定參考。</p>
+                <ul><em>歷屆主題</em>
+                    <li><em>100年國際漫畫研習營</em></li>
+                    <li>「漫畫出版實務精進學程」</li>
+                    <li><em>101年國際漫畫研習營</em></li>
+                    <li>「漫畫家跨出去！─漫畫創作跨界實務精進課程」</li>
+                    <li><em>102年國際漫畫研習營</em></li>
+                    <li>「漫畫創作大未來！─漫畫創作實務精進課程」</li>
+                </ul>
+                <p><em>交流與展望</em> 期望透過研習營, 讓有志於動漫畫創作者能夠開拓視野, 更期許兩岸四地能夠有更多的互動與結合機會, 共同開創華文漫畫的嶄新未來。</p>
+            </div>
+            <div id="tacpa-g" class="show">
+                <h5>名家畫展系列</h5>
+                <p>邀請日本與台灣知名創作者不定期進行作品展覽, 推廣漫畫藝術創作欣賞風氣。</p>
+            </div>
+            <div id="tacpa-c" class="show">
+                <h5>動漫畫演唱會系列</h5>
+                <p>邀請日本知名動畫歌手舉辦演唱會, 如Jam Project、影山浩宣、遠藤正明、奧井雅美、栗林みな実等。</p>
+            </div>
+            <div id="company-about" class="show">
+                <h4>杜葳廣告股份有限公司簡介</h4>
+                <h5>具備專業動漫畫產業背景</h5>
+                <p>杜葳廣告旗下擁有台灣最大規模同人創作活動「開拓動漫祭」系列、唯一合法動漫畫情報誌《Frontier》、動漫文化研究專門叢書、代理海外漫畫相關書籍等業務歷經十餘年。主力團隊成員動漫業界經驗均長達十年以上, 在收集國內外動漫業界情報、分析動漫族群喜好以及推動台灣原創漫畫上均有卓越成績。</p>
+            </div>
+            <div id="company-p" class="show">
+                <h5>杜葳廣告旗下擁有動漫品牌活動／出版品</h5>
+                <ul>
+                    <li><em>得獎紀錄</em></li>
+                    <li>文化部第二屆金漫獎「最佳年度漫畫貢獻獎」</li>
+                    <li><em>動漫同人活動</em></li>
+                    <li>FF開拓動漫祭 (2002～迄今．共27屆)</li>
+                    <li>PF亞洲動漫創作展 (2004～迄今．共24屆)</li>
+                    <li>CN原創漫畫交流展 (2011～迄今．共5屆)</li>
+                    <li>RF模型創作祭 (2014～迄今．共3屆)</li>
+                    <li><em>出版品</em></li>
+                    <li>Frontier動漫畫情報誌月刊 (2000～迄今．15年共175期)</li>
+                    <li>原創漫畫《家族的肖像》(獲新聞局青少年優良讀物推薦)</li>
+                    <li>動漫畫研究系列叢書 (2006～迄今．共6本)</li>
+                </ul>
+            </div>
+            <div id="company-g" class="show">
+                <h4>長期與公家單位、地方政府配合承接動漫畫主題專案</h4>
+                <p>杜葳廣告長期接受地方政府委任執行動漫相關主題活動, 業務範圍涵蓋展覽、同人活動、動漫演唱會、學術講座、動漫音樂會、海外貴賓邀請等。</p>
+                <h5>杜葳廣告執行之地方政府動漫主題專案</h5>
+                <ul>
+                    <li><em>文化部 (新聞局)</em></li>
+                    <li>「國漫營動漫人才培訓課程」專案承接 (2010)</li>
+                    <li>「國際漫畫研習營」專案承接 (2011～2013)</li>
+                    <li><em>新北市</em></li>
+                    <li>「新北市動漫畫原作劇本競賽」業務執行 (2011)</li>
+                    <li>「府中15–跨越疆界特展」專案承接 (2012～2013)</li>
+                    <li>「府中15–電玩美學特展」專案承接 (2015)</li>
+                    <li><em>桃園縣</em></li>
+                    <li>「桃園國際動漫大展」專案承接 (2012)</li>
+                    <li><em>台中市</em></li>
+                    <li>「台中動．漫．力」專案承接 (2012～2015)</li>
+                    <li><em>花蓮縣</em></li>
+                    <li>「花蓮國際動漫大展」專案承接 (2015)</li>
+                    <li><em>高雄市</em></li>
+                    <li>「動漫高雄．精彩樂活」專案承接 (2008)</li>
+                    <li>「高雄動漫展」專案承接 (2009～2010)</li>
+                    <li>「駁二動漫祭」專案承接 (2011～2015)</li>
+                </ul>
+            </div>
+            <div id="company-e" class="show">
+                <h4>主辦動漫畫主題相關活動經驗豐富</h4>
+                <p>長期主辦、承辦各類型動漫畫相關活動, 自提案、籌備、聯繫、整合行銷一貫執行, 是委任動漫主題活動最值得信任的團隊。</p>
+                <h5>杜葳廣告執行、主辦之動漫主題相關活動</h5>
+                <ul>
+                    <li><em>動漫演唱會</em></li>
+                    <li>「May’n」「KOTOKO」「 いとうかなこ」演唱會主辦</li>
+                    <li>「Dream Stage」演唱會 (2008～2011) 主辦</li>
+                    <li>「JAM Project」演唱會 (2008～2011) 主辦</li>
+                    <li>「聖夜歌姬」演唱會 (2008) 主辦</li>
+                    <li>「極限燃燒」演唱會 (2007、2009) 主辦</li>
+                    <li><em>動漫音樂會</em></li>
+                    <li>「和田薰動漫交響音樂會」專案承接 (2012)</li>
+                    <li>「李國鼎故居動漫音樂會」專案承接 (2010)</li>
+                    <li><em>畫展</em></li>
+                    <li>「亞洲名家插畫展」主辦 (2012)</li>
+                    <li>「雪華彩影」遊戲原畫主題畫展主辦 (2010)</li>
+                    <li>「光風幻夢」Tony原畫展主辦 (2010)</li>
+                    <li><em>競賽</em></li>
+                    <li>「開拓極短篇原創大賞」主辦 (2012～迄今)</li>
+                    <li>「驚艷幻想Cosplay大賽」專案承接 (2012)</li>
+                    <li>「熱情仲夏Cosplay大賽」專案承接 (2010)</li>
+                    <li>「原創漫畫出版補助計畫」主辦 (2010～2011)</li>
+                    <li>「台灣啤酒創意CG繪圖大賽」專案承接 (2008)</li>
+                    <li>「中華郵政創意郵務服比賽」專案承接 (2006)</li>
+                </ul>
+            </div>
+        </article>
+
+    </div>
+    </body>
+</html>

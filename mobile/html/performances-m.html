@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+	   <meta name="author" content="">
+        <title>動漫演出活動 | 台灣動漫畫推廣協會</title>
+              
+        <meta name="viewport" content="width=device-width">
+        <!--link to jquery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <!--link to bigSlide javascript-->
+        <script src="../bigSlide.js"></script>
+        <script>
+        $(document).ready(function() {
+            $('.menu-link').bigSlide();
+            
+            //cut news headlines after certain length
+            $("span.headline").each(function(i){
+                len=$(this).text().length;
+                if(len > 20)
+                {
+                    $(this).text($(this).text().substr(0,20)+'...');
+                }
+            });
+            //show appropriate section on link click
+            $('.abutton').click(function() {
+                var link = $(this).attr('href');
+                var showIt = $(link);
+                var hideIt = $(".show");
+                
+                hideIt.fadeOut(100, function() {
+                    hideIt.removeClass("current");
+                    showIt.addClass("current");
+                    showIt.fadeIn(100);
+                });
+            });
+        });
+        </script>
+        <!--link to css-->
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../bigSlide.css">
+    </head>
+    <body>
+       <!--sliding menu-->
+        <nav id="menu" class="panel" role="navigation">
+             <div id="menuBlock">
+             <a href="#menu" class="menu-link">&#9776;</a>
+             </div>
+        <ul class="mainLinks">
+            <li><a href="../index.html">回首頁 home</a></li>
+            <li><a href="../html/about-m.html">關於我們 about</a></li>
+            <li><a href="../html/contact-m.html">聯絡我們 contact</a></li>
+        </ul>
+        <ul class="sideLinks">
+            <li><h2><a href="../html/publications-m.html">動漫期刊專書出版<br />publications</a></h2></li>
+            <li><h2><a href="../html/events-m.html">動漫文創活動<br />cultural events</a></h2></li>
+            <li><h2><a href="#">動漫演出活動<br />live performances</a></h2></li>
+            <li><h2><a href="../html/lectures-m.html">動漫學術講座<br />lectures</a></h2></li>
+            <li><h2><a href="../html/exhibitions-m.html">動漫主題策展<br />themed exhibitions</a></h2></li>
+            <li><h2><a href="../html/competitions-m.html">動漫主題競賽<br />themed competitions</a></h2></li>
+            </ul>
+        </nav>
+        <!--main page content-->
+    <div class="wrap push">
+
+        <a href="#menu" class="menu-link">&#9776;</a>
+        <a id="version" href="../../html/section.html#page5">切換電腦版 desktop version</a>
+        <h1>動漫<br />演出活動</h1>
+        <h3>live performances</h3>
+        <section>
+            <ul class="sublinks">
+                <h4><a href="#cfifteen" class="abutton">演唱會</a></h4>
+                <li><span class="subheading">2012-2016</span>
+                    <ul>
+                        <li><a href="#cfifteen" class="abutton">GARNiDELiA&amp;八王子P</a></li>
+                        <li><a href="#cfourteen" class="abutton">fripSide</a></li>
+                        <li><a href="#cthirteen" class="abutton">流日Project</a></li>
+                        <li><a href="#ctwelve" class="abutton">今井麻美&amp;彩音</a></li>
+                        <li><a href="#celeven" class="abutton">いとうかなこ&amp;榊原ゆい</a></li>
+                        <li><a href="#cten" class="abutton">angela</a></li>
+                        <li><a href="#cnine" class="abutton">いとうかなこ</a></li>
+                        <li><a href="#ceight" class="abutton">KOTOKO</a></li>
+                    </ul>
+                </li>
+                <li><span class="subheading">2007-2011</span>
+                    <ul>
+                        <li><a href="#cseven" class="abutton">May'n</a></li>
+                        <li><a href="#csix" class="abutton">奧井雅美</a></li>
+                        <li><a href="#cfive" class="abutton">JAM Project</a></li>
+                        <li><a href="#cfour" class="abutton">極限燃燒</a></li>
+                        <li><a href="#cthree" class="abutton">yui&amp;minori</a></li>
+                        <li><a href="#ctwo" class="abutton">angela&amp;Momoi</a></li>
+                        <li><a href="#cone" class="abutton">聖夜歌姫</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <ul class="sublinks">
+                <h4><a href="#ytwo" class="abutton">音樂會</a></h4>
+                    <li><a href="#ytwo" class="abutton">Yuki Kajiura (2014)</a></li>
+                    <li><a href="#yone" class="abutton">田中公平 (2013)</a></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="sublinks">
+                <h4><a href="#shsix" class="abutton">聲優 Talk Show</a></h4>
+                <li><span class="subheading">2015</span>
+                    <ul>
+                        <li><a href="#shsix" class="abutton">SWEET x SWEET</a></li>
+                        <li><a href="#shfive" class="abutton">日野聰與寺島拓篤</a></li>
+                    </ul> 
+                </li>
+                <li><span class="subheading">2014</span>
+                    <ul>
+                        <li><a href="#shfour" class="abutton">SWEET x SWEET</a></li>
+                        <li><a href="#shthree" class="abutton">福山潤</a></li>
+                    </ul>
+                </li>
+                <li><span class="subheading">2013</span>
+                    <ul>
+                        <li><a href="#shtwo" class="abutton">福山潤</a></li>
+                        <li><a href="#shone" class="abutton">森川社長</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <article>
+            <div id="cfifteen" class="show current">
+                <h4>GARNiDELiA&amp;八王子P</h4>
+                <h5>「GARNiDELiA&amp;八王子P」LIVE 2016 in TAIPEI</h5>
+                <p><em>日期</em> 2016年1月30日(六)</p>
+                <p><em>地點</em> ATT SHOW BOX (台北市信義區松壽路12號)</p>
+                <p><em>票價</em> NT$1,800元</p>
+                <p><em>GARNiDELiA</em> 由歌手MARiA和作曲家toku於2010年組成, 為多部動畫作品如《KILL la KILL》、《魔法科高中的劣等生》、《鋼彈G之復國運動》等演唱了主題曲。而toku本人也在NICONICO動畫上以とくP的身分, 做為一位VOCALOID作曲家而大為活躍, 創作出如「SPiCa」、「COLOR」、「blue bird」等名曲。</p>
+                <p><a href="https://www.youtube.com/user/GARNiDELiAVEVO" target="_blank">GARNiDELiA官方YouTube頻道</a></p>
+                <p><em>八王子P</em> 創作出「Sweet Devil」、「エレクトリック・ラブ」、「Baby Maniacs」等名曲的八王子P, 在台、日兩地都有著超高的人氣, 近年也以DJ身分活躍在各類演出中。被譽為VOCALOID界的貴公子。</p>
+                <p><a href="https://www.youtube.com/user/hachiojip/" target="_blank">八王子P官方YouTube頻道</a></p>
+            </div>
+            <div id="cfourteen" class="show">
+                <h4>fripSide</h4>
+                <h5>fripSide LIVE in Taiwan 2015～infinite synthesis 1+2～</h5>
+                <p><em>日期</em> 2015年8月8日(六)</p>
+                <p><em>地點</em> ATT SHOW BOX (台北市信義區松壽路12號)</p>
+                <p><em>票價</em> NT$2,200元</p>
+                <p><em>主辦單位</em> 杜葳廣告股份有限公司</p>
+                <p><em>協辦單位</em> 台灣動漫畫推廣協會</p>
+                <p>萬眾矚目、眾所期待的fripSide台北演唱會讓大家久等了! 創造出《only my railgun》、《sister's noise》等多首超級經典名曲的fripSide, 首次台灣單獨公演即將在今年8/8於台北ATT SHOW BOX舉辦!</p>
+            </div>
+            <div id="cthirteen" class="show">
+                <h4>流日Project</h4>
+                <h5>流日Project「TOTSUGEKI～台灣篇～」</h5>
+                <p><em>日期</em> 2015年01月17日(六)</p>
+                <p><em>地點</em> The Wall 公館 (台北市羅斯福路4段200號B1)</p>
+                <p><em>票價</em> NT$1,200元</p>
+                <p><em>主辦單位</em> 杜葳廣告股份有限公司</p>
+                <p><em>協辦單位</em> 台灣動漫畫推廣協會</p>
+                <p>相信常在網路上衝浪的動漫歌曲粉絲, 對於「流田Project」這個團體絕不陌生! 團員們帶著面具、以狂野的搖滾手法改編無數首知名動漫歌曲, 近期內更擔任「聖闘士星矢Ω」、「ドラゴンコレクション」的動畫主題曲, 是的, 就是那個「流田Project」即將來台灣開場了!!</p>
+                <p><em>流日Project</em> 以卓越的重新編曲能力, 以搖滾樂團的手法重新編製熱門的動畫音樂, 創造出在動畫系網站上累計20,000,000次以上(至2013年1月)的點閱次數。</p>
+                <p>並擔任2013年4月電視動畫「聖闘士星矢Ω」 新章「新生聖衣編」的主題曲! 發行了第一首動畫主題曲『未来聖闘士Ω ～セイントエボリューション～』! 並且自2014年4月起, 負責電視動畫「ドラゴンコレクション」的主題歌中!</p>
+                <p>以廉價中帶喜感的面具姿態中所無法想像到的吉他搖滾音, 在Live House的個人演唱會巡迴演出, 以及動畫音樂活動、搖滾音樂祭中精力充沛的活動中! 不論是重編樂曲、自創樂曲, 對於「流田Project」這個獨一無二的樂團所產生的音樂, 動畫粉絲就不在話下、甚至還吸引了搖滾吉他粉絲的目光。</p>
+                <p><a href="https://www.youtube.com/user/moogcockbook" target="_blank">流田Project官方YouTube頻道 (Nagareda Project)</a></p>
+                <p><em>特別來賓 Pile小姐</em> Pile小姐的聲優及歌手的代表作品為「Love Live」中的「西木野真姫」, 也有為台灣7-11官方角色「OPEN小將」的妹妹「Please美眉」配音。同時以個人名義, 以及「Please &amp; Secret」、「4to6」等雙人組歌唱團體身分, 進行歌手的演藝活動。</p>
+                <p><a href="https://pile.asia/" target="_blank">Pile官方網站</a></p>
+            </div>
+            <div id="ctwelve" class="show">
+                <h4>今井麻美&amp;彩音</h4>
+                <h5>今井麻美&amp;彩音Joint Live 2014 in TAIWAN</h5>
+                <p><em>日期</em> 2014年09月28日(日)</p>
+                <p><em>地點</em> The Wall 公館 (台北市羅斯福路4段200號B1)</p>
+                <p><em>票價</em> NT$1,500元</p>
+                <p><em>主辦單位</em> 杜葳廣告股份有限公司</p>
+                <p><em>協辦單位</em> 台灣動漫畫推廣協會</p>
+                <p>超人氣歌姬今井麻美海外初次公演, 預定將會演出「超次元アクション ネプテューヌU」的片頭曲「ヴィーナスのハルモニア」, 以及「コープスパーティーBLOOD DRIVE」的片頭曲「化身」等等。而動畫、遊戲的歌姬彩音，首次登上台灣的演唱會上, 預定演出劇場版「STEINS;GATE 負荷領域のデジャヴ」片尾曲『いつもこの場所で』, 以及帶來高人氣作品「ひぐらしのなく頃に」、「11eyes」系列等多首知名歌曲來獻給台灣的大家喔!!</p>
+                <p><em>今井麻美</em> 以聲優身分配有『シュタインズ・ゲート』牧瀬紅莉栖、『ノラガミ』伴音／真喩、『超次元ゲイム ネプテューヌ』ノワール／ブラックハート、『閃乱カグラ』斑鳩、『BLAZBLUE ALTER MEMORY』ツバキ＝ヤヨイ、遊戲『コープスパーティー』篠崎あゆみ、『ぷよぷよ7』あんどうりんご等等、演出過多部作品。也在網路廣播節目『今井麻美のSinger Song Gamer』等, 活躍於各項領域。於2008年後半起在遊戲『EVER17』中擔任片頭／片尾曲, 開始以歌手身分進行藝能活動。2009年4月由5pb.發行出道單曲『Day by Day / Shining Blue Rain』。2014年3月發行『超女神信仰 ノワール 激神ブラックハート』的片頭曲『漆黒のサステイン』。2010年11月發行第一張專輯『COLOR SANCTUARY』、2011年11月發行第二張專輯『Aroma of happiness』、2012年11月發行第三張專輯『Precious Sounds』、2013年11月發行第四張專輯『この雲の果て』。今井麻美小姐本人也會著手於作詞, 以獨特具有延展性的歌聲, 將情感深入於歌曲中並全面展現出來。</p>
+                <p><em>彩音</em> 2004年以電視動畫『W～ウィッシュ～』主題曲『KIZUNA～絆』出道。並以高人氣作品『ひぐらしのなく頃に祭』的主題曲『嘆きノ森/コンプレックス・イマージュ』成為話題。此後更負責擔任動畫主題曲『ウミショー』、『AYAKASHI』、『11eyes-罪と罰と購いの少女-』、遊戲主題曲『ひぐらしデイブレイク』、『トリガーハートエグゼリカ』、『メモリーズオフ』系列、『11eyes』等等多數作品。以其帶沙啞感的高昂歌聲, 成為動畫與遊戲歌曲中不可或缺的歌手! 並在科學冒險系列『シュタインズ・ゲート』中首次參戰、2013年4月發行『劇場版 シュタインズ・ゲート 負荷領域のデジャヴ』片尾曲『いつもこの場所で』, 同年5月發行『STEINS;GATE 線形拘束のフェノグラム』片頭曲『フェノグラム』, 11月發行PlayStation Vita版遊戲『シュタインズ・ゲート 線形拘束のフェノグラム』OP『邂逅（かいこう）のフェタリテート』, 2014年1月更發行第四張專輯『Luminous Flux』。</p>
+            </div>
+            <div id="celeven" class="show">
+                <h4> いとうかなこ&amp;榊原ゆい</h4>
+                <h5>いとうかなこ&amp;榊原ゆいLive! ～Hacking PHANTASM～</h5>
+                <p><em>日期</em> 2014年02月28日(五)</p>
+                <p><em>地點</em> The Wall 公館 (台北市羅斯福路4段200號B1)</p>
+                <p><em>票價</em> NT$1,500元</p>
+                <p><em>連署主辦</em> FancyFrontier 開拓動漫</p>
+                <p><em>宣傳協力</em> aniarc 同人雲</p>
+                <p>還記得いとうかなこ小姐那熱情奔放的聲音, 去年在THE WALL讓粉絲們如癡如醉嗎? いとうかなこ小姐一直記得台灣的粉絲們, 希望能再與台灣的朋友們一同沉浸在音樂內外, 這次更邀請了另一位也很想念台灣粉絲的歌姬榊原ゆい小姐, 兩位歌姬將一起來台舉辦演唱會! 還請粉絲們拭目以待!!</p>
+            </div>
+            <div id="cten" class="show">
+                <h4>angela</h4>
+                <h5>angela Live in TAIWAN－ANISONG NIGHT－(2013)</h5>
+                <p><em>日期</em> 2013年10月12日(五)</p>
+                <p><em>地點</em> The Wall 公館 (台北市羅斯福路4段200號B1)</p>
+                <p><em>票價</em> NT$1,500元</p>
+                <p><em>主辦單位</em> 杜葳廣告股份有限公司 (Fancy Frontier)</p>
+                <p><em>協辦單位</em> 台灣動漫推廣協會</p>
+                <p>「angela」是由atsuko(山下敦子) 小姐跟KATSU (平里勝敬) 先生兩人所組成的樂團, 現為日本KING RECORD公司旗下之樂團。除了演唱活動之外, 詞曲提供、樂器演出等等其它的活動也不少, 可說是相當多才多藝的團體。</p>
+                <p>atsuko小姐跟KATSU先生兩人都是岡山縣出身, 不過兩人當時是各自前往東京發展。兩人結識之後由於是同地出身又一樣喜愛音樂因此就組成了樂團開始進行創作和演唱活動。</p>
+                <p>2003年angela以動畫《宇宙的Stevilla》片頭曲「通往明日的brilliant」商業出道，由於angela嘹亮有力的曲風相當適合這 部青春學園劇, 片尾曲「綺麗的夜空」也展現出另一種輕快愉悅的曲風, angela因此大受好評, 台灣的讀者也大多是從這首歌認識他們。</p>
+                <p>2004年為熱門動畫「蒼穹之戰神」演唱的片頭曲「Shangri-La」相當的出色, 把angela的演唱以及創作功力完成表現出來, 片尾曲 「Separation」也展示出演唱慢歌的實力。2007年angela演唱動畫「Heroic Age」的片頭曲「gravitation」, 從慢版轉入氣勢澎湃的旋律相當貼切本作的氣氛, 讓人覺得他們在唱腔與曲風詮釋上又有新的突破, 是相當值得一聽的曲子。</p>
+                <p>由於angela多變又札實的演唱功力, 因此得到很好的評價。而後又連續演唱了「屍姫」「機巧魔神」、「K」、「革命機Valvrave the Liberator」等多部知名動畫的主題曲, 在海外也參加過多次的大型演出, 是相當受到動畫歌迷喜愛與肯定的歌唱團體。</p>
+                <p>2012年10月推出TV動畫「K」的主題歌「KINGS」、「To be with U! 」。2013年4月推出第六張專輯「ZERO」、5月開始進行出道10周年巡迴演唱會。並擔任預定2013年秋季播放的電視動畫「COPPELION」的片頭曲與片尾曲演唱。</p>
+            </div>
+            <div id="cnine" class="show">
+                <h4>いとうかなこ</h4>
+                <h5>いとうかなこ Taipei Live 2012</h5>
+                <p><em>日期</em> 2012年12月14日(五)</p>
+                <p><em>地點</em> The Wall 公館 (台北市羅斯福路4段200號B1)</p>
+                <p><em>票價</em> NT$1,500元</p>
+                <p><em>主辦單位</em> 杜葳廣告股份有限公司 (Fancy Frontier)</p>
+                <p><em>協辦單位</em> 台灣動漫推廣協會</p>
+                <p>本週五晚上就是大家期待的 いとうかなこ 2012台北演唱會了! 擔任《命運石之門》、《暮蟬悲鳴時》等知名作品主題曲演唱、有Nitroplus御用歌姬之稱的いとうかなこ即將與你見面! 別忘了帶著你手中的票，前往台北公館The Wall會場!</p>
+            </div>
+            <div id="ceight" class="show">
+                <h4>KOTOKO</h4>
+                <h5>KOTOKO ASIA TOUR 2012 IN TAIWAN</h5>
+                <p><em>日期</em> 2012年05月12日(六)</p>
+                <p><em>地點</em> Neo Studio (台北市松壽路22號5F)</p>
+                <p><em>票價</em> NT$1,500元</p>
+                <p><em>主辦單位</em> threenine entertainment, 杜葳廣告股份有限公司 (Fancy Frontier)</p>
+                <p>知名動畫與遊戲歌手KOTOKO的亞洲巡迴演唱會「KOTOKO ASIA TOUR 2012 IN TAIWAN」台灣公演, 即將在5月12日與大家見面了!!</p>
+                <p>暌違三年的KOTOKO, 本次將帶專屬樂團來台, 為久違的台灣觀眾帶來最高水準的演出。演唱會選在已經舉辦過多場日籍動畫歌手演唱會的信義區Neo studio（舊名studio18）舉辦, 本場地觀眾與舞台距離極近, 全場均是搖滾區, 可就近享受最震撼的聲光效果。</p>
+            </div>
+            <div id="cseven" class="show">
+                <h4>May'n</h4>
+                <h5>May'n ASIA TOUR 2011「UNITE!!」</h5>
+                <p><em>日期</em> 2011年05月27日(五)</p>
+                <p><em>地點</em> The Wall 公館 (台北市羅斯福路4段200號B1)</p>
+                <p><em>票價</em> NT$3000元, 2200元, 1400元, 800元</p>
+                <p><em>主辦單位</em> 杜葳廣告股份有限公司 (Fancy Frontier)</p>
+                <p><em>協辦單位</em> 台灣動漫推廣協會</p>
+                <p>待補</p>
+            </div>
+            <div id="csix" class="show">
+                <h4>奧井雅美</h4>
+                <h5>奧井雅美 ASIA TOUR 2011 ～Troubadour～vol.2 in Taipei</h5>
+                <p><em>日期</em> 2011年09月25日(日)</p>
+                <p><em>地點</em> studio18 (台北市松壽路22号5F)</p>
+                <p><em>票價</em> NT$1600元</p>
+                <p><em>主辦單位</em> 杜葳廣告股份有限公司 (Fancy Frontier)</p>
+                <p><em>企画制作</em> MIU Co., Ltd.</p>
+                <p><em>協力</em> SOLIDVOX</p>
+                <p>演唱過《少女革命UTENA》、《秀逗魔導士》等多首著名動畫主題曲、廣受動漫迷喜愛的日本最著名的動畫女歌手奧井雅美小姐, 今年的亞洲巡迴演出將再度來到台灣與歌迷相見! 演唱會中還邀請了知名聲優歌手栗林みな実小姐共同演出, 兩位實力派唱將會激發出什麼樣的火花呢?</p>
+                <p>奧井雅美小姐自出道以來即演唱過許多膾炙人口, 相當受到同好喜愛的經典歌曲。她同時也是從是詞曲創作, 並擔任音樂製作人, 是一位多才多藝的音樂人。栗林みな実小姐則是聲優兼歌手, 代表歌曲有《你所期望的永遠》的所有主題曲、《聖槍修女》片頭曲、《舞-HiME》、《舞-乙HiME》片頭曲等等。</p>
+                <p>本次的臺灣演唱會是兩人首次合作來台演出。除了台灣歌迷期待的經典動畫歌曲外, 還將精選過去未曾來台獨唱過的精彩歌曲, 實力派的唱腔絕能對能讓大家一飽耳福!</p>
+                <h5>奧井雅美～Troubadour～vol.1 in Taipei</h5>
+                <p>待補</p>
+            </div>
+            <div id="cfive" class="show">
+                <h4>JAM Project</h4>
+                <h5>JAM Project LIVE 2011 GO! GO! GOING!! ～ARIGATO TOMODACHI～</h5>
+                <p><em>日期</em> 2011年12月03日(六), 12月04日(日)</p>
+                <p><em>地點</em> studio18 (台北市松壽路22号5F)</p>
+                <p><em>票價</em> NT$2600元</p>
+                <p><em>主辦單位</em> 杜葳廣告股份有限公司 (Fancy Frontier)</p>
+                <p><em>協辦單位</em> 台灣動漫推廣協會</p>
+                <p>知名動畫歌演唱團體JAM Project, 自2008年起每年的巡迴演唱會都會來到台灣舉辦, 2011年自然也不例外, 不過上一場演唱會在2010年8月, 而這次的演唱會則在12月初，相隔將近一年半, 就以全員到齊而言, 仍然要說「好久不見了」。</p>
+                <p>演唱會的舉辦日期在12月3日、4日, 地點跟之前的奧井雅美一樣, 是位於台北市信義區的Studio18, 由於本場地音響效果極好大受好評, 日方音響人員也感到非常滿意, 因此決定選在這個場地以能完美發揮JAM Project的歌唱威力, 也因為這次場地較小的關係, 因此也繼2009年再次連唱兩天, 讓台灣歌迷能夠自行選擇方便參加的天數。</p>
+                <h5>JAM Project LIVE 2010 10th Anniversary Tour MAXIMIZER～Decade of Evolution～</h5>
+                <p>待補</p>
+                <h5>JAM Project Hurricane Tour 2009 in Taipei ～Gate of the Future</h5>
+                <p>待補</p>
+                <h5>JAM Project WORLD FIGHT 2008 in TAIPEI</h5>
+                <p>待補</p>
+            </div>
+            <div id="cfour" class="show">
+                <h4>極限燃燒</h4>
+                <h5>極限燃燒II 翻天覆地 (2009)</h5>
+                <p>待補</p>
+                <h5>極限燃燒演唱會 (2007)</h5>
+                <p>待補</p>
+            </div>
+            <div id="cthree" class="show">
+                <h4>yui&amp;minori</h4>
+                <h5>Dream Stage～yui&amp;minori～ (2008)</h5>
+                <p>待補</p>
+            </div>
+            <div id="ctwo" class="show">
+                <h4>angela&amp;Momoi</h4>
+                <h5>Dream Stage～angela&amp;Momoi～ (2008)</h5>
+                <p><em>活動回顧</em> 在9月28日，angela和桃井はるこ在台北市政府親子廣場舉行了Dream Stage - angela &amp; momoi台北演唱會。雖然正值颱風襲台，許多歌迷還是不畏風雨的到場參加。angela和桃井はるこ賣力的演出，以及歌迷們熱情的反應，讓這場演唱會在風雨之中圓滿而熱烈的結束</p>
+                <p>演唱會在當天晚間6點30分開演，前段首先由angela出場。</p>
+                <ul>
+                    <li>綺麗な夜空</li>
+                    <li>未来とゆう名の答え</li>
+                    <li>fly me to the sky</li>
+                    <li>The end of the world</li>
+                    <li>Separation</li>
+                    <li>DEAD SET</li>
+                    <li>YOU GET TO BURNING</li>
+                    <li>果て無きモノローグ</li>
+                    <li>Peace of mind</li>
+                    <li>明日へのbrilliant road</li>
+                    <li>Shangri-La</li>
+                    <li>EN1. 残酷な天使のテーゼ</li>
+                    <li>EN2.gravitation</li>
+                </ul>
+                <p>在中場休息之後，接著就是桃井はるこ出場。</p>
+                <ul>
+                    <li>Party!</li>
+                    <li>GURA GURA</li>
+                    <li>トンドルベイビー</li>
+                    <li>ナイト・で・ないと</li>
+                    <li>Adolescence -rainy Taipei version-</li>
+                    <li>愛のメディスン</li>
+                    <li>Hide and seek</li>
+                    <li>今、あなたが好き</li>
+                    <li>21世紀</li>
+                    <li>WONDER MOMO-I</li>
+                    <li>Feel so Easy!</li>
+                    <li>Romantic summer (momo-i ver)</li>
+                    <li>悠遠のアミュレット</li>
+                    <li>さいごのろっく</li>
+                    <li>Thunder Shot!</li>
+                    <li>LOVE.EXE</li>
+                    <li>EN.ゆめのばとん</li>
+                </ul>
+                <p>安可曲演唱結束後, 桃井小姐請angela再次上台一起謝幕, 結束了這個熱烈的颱風夜。</p>
+            </div>
+            <div id="cone" class="show">
+                <h4>聖夜歌姫</h4>
+                <h5>聖夜歌姫演唱會 (2007)</h5>
+                <p>在2007年的聖誕夜前夕, 12月23日晚上, 我們邀請到了動畫歌曲的2位知名女歌手栗林みな実和美郷あき小姐來台舉行演唱會, 這也是她們第一次在海外的演唱。</p>
+                <p>演唱曲目</p>
+                <ul>
+                    <li><em>美郷あき</em></li>
+                    <li>くちびる白昼夢</li>
+                    <li>Blood Queen</li>
+                    <li>もう愛しかいらない</li>
+                    <li>君が空だった</li>
+                    <li>Silent wing</li>
+                    <li>明日をとめないで</li>
+                    <li>If…～I wish～(feel it mix)</li>
+                    <li>HAPPY CHERRY FESTA!</li>
+                    <li>disarm dreamer</li>
+                    <li>少女迷路でつかまえて</li>
+                </ul>
+                <ul>
+                    <li><em>栗林みな実</em></li>
+                    <li>Rumbling hearts</li>
+                    <li>マブラヴ</li>
+                    <li>Precious Memories</li>
+                    <li>翼はPleasure Line</li>
+                    <li>おなじ月をみてる</li>
+                    <li>Blue Treasure</li>
+                    <li>Shining☆Days</li>
+                    <li>Dream☆Wing</li>
+                    <li>Yell!</li>
+                    <li>Next Season</li>
+                </ul>
+                <p>安可曲</p>
+                <ul>
+                    <li><em>栗林みな実</em> Crystal Energy</li>
+                    <li><em>栗林みな実+美郷あき</em> Shining☆Days</li>
+                </ul>
+            </div>
+            <div id="ytwo" class="show">
+                <h4>Yuki Kajiura</h4>
+                <h5>Yuki Kajiura LIVE vol. #11 elemental Tour 2014 in Taipei</h5>
+                <p><em>日期</em> 2014年04月12日 (六)</p>
+                <p><em>地點</em> ATT SHOW BOX (台北市信義區松壽路12號)</p>
+                <p><em>演出團體</em> 梶浦由記&amp;FictionJunction</p>
+                <p><em>票價</em> NT$3800元, 2800元, 1800元</p>
+                <p>繼去年夏天於國家音樂廳熱鬧登場的「偉大的航道：田中公平動漫交響音樂會」, 開啟了台灣舉辦動漫音樂的演奏先河並引起廣大迴響後, 2014年在粉絲們殷殷期盼下, 開拓動漫邀請到曾為許多知名動畫配樂的新銳音樂家「梶浦由記」大神與她的優秀音樂團隊「Fiction Junction」, 完整人馬首度來台演出!</p>
+                <p>梶浦由記活躍在日本動畫、遊戲、電視廣告及電影界, 擅長將各種民族音樂與美妙和聲融合一體, 形成華麗魔幻的音樂, 並創作出如《刀劍神域》、《Fate/Zero》、《魔法少女小圓》、《機動戰士鋼彈SEED》、《NOIR》、《TSUBASA翼》、《潘朵拉之心》、《舞-Hime》等多部膾炙人口的主題歌曲與配樂。喜歡梶浦大神令人動容的魔幻磅礡音樂的粉絲們, 請千萬不要錯過這場年度盛會!</p>
+            </div>
+            <div id="yone" class="show">
+                <h4>田中公平</h4>
+                <h5>偉大的航道 田中公平動漫交響音樂會</h5>
+                <p><em>日期</em> 2013年06月16日 (日)</p>
+                <p><em>地點</em> 國立中正文化中心 ─ 國家音樂廳</p>
+                <ul>
+                    <li><em>特別邀請</em></li>
+                    <li>田中公平</li>
+                    <li>ピアニート公爵</li>
+                    <li>日高範子</li>
+                    <li>井上喜久子</li>
+                </ul>
+                <p><em>演出團體</em> 台北愛樂管弦樂團</p>
+                <p><em>指揮</em> 田中公平、林天吉(台北愛樂駐團指揮)</p>
+                <p><em>票價</em> NT$4800元, 3600元, 2800元, 2400元, 1800元, 1200元, 800元</p>
+                <p>將在6月16日於國家音樂廳舉辦的田中公平動漫交響音樂會, 確定將邀請人氣鋼琴家Pianeet侯爵、知名資深聲優日高のり子 (日高範子) 及井上喜久子參與演出!</p>
+                <p>演出作品預定會有《櫻花大戰》、《航海王》、《冰菓》、《勇往直前》、《重力異想世界GRAVITY DAZE》等作品。</p>
+                <p>特別來賓介紹</p>
+                <p><em>田中公平</em> 日本知名的影視與動漫配樂作曲／指揮家, 其所創作之配樂曲目無數, 有許多膾炙人口的當紅影視節目配樂均出自其手, 至今已創作超過百部經典影視動畫配樂, 被稱為日本『配樂第一人』。</p>
+                <p>田中公平畢業於東京藝術大學音樂學部作曲學系, 並於美國百克里音樂學院研習配樂製作。其創作風格多變而精煉, 對於日本傳統樂器與爵士樂風格的創作, 更是其所特長之處。作品中常看見熱血激昂為其音樂之特色, 創作出了《檄！帝國華擊團》《ONE PIECE海賊王》《魔動王》《勇者王》等膾炙人口的名作, 其中又以遊戲配樂作品出身延續到動畫、舞台劇的《櫻花大戰》奠定在日本動畫配樂的地位。</p>
+                <p><em>Pianeet侯爵</em> 畢業於東京藝術大學, 並於同校取得碩士學位。從正統科班畢業的ピアニート公爵因對於日本古典樂界日趨閉鎖的風氣有感, 選擇以假名在網路上開始他的演奏生涯, 除了古典音樂的演出外, 並選擇許多動畫與遊戲的配樂演出, 配合其深厚的古典訓練, 演出廣獲好評。</p>
+                <p>自2007年開始在NICONICO動畫投稿鋼琴演奏影片, 將《偶像大師》的『蒼い鳥 (M@STER VERSION) 』改編為鋼琴獨奏曲, 點閱再生數高達70萬人, 2011年更將投稿作品集結成專輯發售, 得到AMAZON暢銷排行及日本Oricon公信排行榜單日排行第一名。</p>
+                <p><em>日高のり子 (日高範子)</em> 參與的重要角色有《鄰家女孩》淺倉南、《龍貓》草壁皋月、《亂馬1/2》天道茜、《犬夜叉》桔梗以及《櫻花大戰》艾莉卡, 演出角色非常多樣化, 尤其以活潑的少年少女最多。</p>
+                <p><em>井上喜久子</em> 著名的角色有《幸運女神》蓓兒丹蒂、《亂馬1/2》天道霞、《星空的邂逅》風見瑞穗、《櫻花大戰》羅貝莉亞．卡爾里尼等, 從讓人印象深刻的溫柔女性到活潑、惡女的角色都有參與。是永遠的17歲。</p>
+            </div>
+            <div id="shsix" class="show">
+                <h4>SWEET x SWEET (2015)</h4>
+                <h5>SWEET x SWEET vol.3 藤原啓治x櫻井孝宏Special talk show in 台灣</h5>
+                <p>待補</p>
+                <h5>SWEET x SWEET vol.2 藤原啓治x游佐浩二Special talk show in 台灣</h5>
+                <p><em>日期</em> 2015年10月04日 (日)</p>
+                <p><em>地點</em> Neo Studio (台北市松壽路22號5F)</p>
+                <p><em>票價</em> NT$1800元</p>
+                <ul>
+                    <li><em>藤原啓治代表作品</em></li>
+                    <li>TIGER &amp; BUNNY (Jake Martinez)</li>
+                    <li>青の祓魔師 (藤本獅郎、撒旦)</li>
+                    <li>HUNTER×HUNTER (第2作)(雷歐力)</li>
+                    <li>西洋骨董洋菓子店 (橘圭一郎)</li>
+                    <li>戦国BASARA (松永久秀)</li>
+                    <li>PSYCHO-PASS (東金朔夜)</li>
+                    <li>魔力小馬 (蒼月紫暮)</li>
+                    <li>Vassalord.血咒聖痕 系列 (雷夫羅)</li>
+                    <li>鋼之鍊金術師 (馬斯•休斯)</li>
+                    <li>蠟筆小新 (野原廣志)</li>
+                </ul>
+                <ul>
+                    <li><em>遊佐浩二代表作品</em></li>
+                    <li>BLEACH (市丸ギン)</li>
+                    <li>薄桜鬼 (原田左之助)</li>
+                    <li>TIGER &amp; BUNNY (Lunatic/Yuri Petrov)</li>
+                    <li>黒執事系列 (劉)</li>
+                    <li>黑色嘉年華　Karneval (朔)</li>
+                    <li>東京闇鴉 (大友陣)</li>
+                    <li>鬼燈的冷徹 (白澤)</li>
+                    <li>魔人偵探腦嚙涅羅 (笹塚衛士)</li>
+                    <li>葬儀屋里德路 (里德路)</li>
+                    <li>假面騎士電王 (浦太洛斯ス/U良太郎)</li>
+                </ul>
+            </div>
+            <div id="shfive" class="show">
+                <h4>日野聰與寺島拓篤</h4>
+                <h5>日野聰與寺島拓篤的熱帶遊樂園 (2015)</h5>
+                <p><em>日期</em> 2015年07月05日 (日)</p>
+                <p><em>地點</em> Neo Studio (台北市松壽路22號5F)</p>
+                <p><em>票價</em> NT$1800元</p>
+                <p><em>主辦單位</em> 杜葳廣告股份有限公司</p>
+                <p><em>協辦單位</em> 台灣動漫畫推廣協會</p>
+                <ul>
+                    <li><em>日野聰知名代表作品</em></li>
+                    <li>AMNESIA (トーマ)</li>
+                    <li>ログ・ホライズン (アイザック)</li>
+                    <li>金色のコルダ シリーズ (衛藤桐也)</li>
+                    <li>金色のコルダ3 シリーズ (冥加玲士、衛藤桐也)</li>
+                    <li>NARUTO -ナルト- 疾風伝 (サイ)</li>
+                    <li>裏切りは僕の名前を知っている -黄昏に堕ちた祈り- (降織千紫郎)</li>
+                    <li>ハイキュー!!(澤村大地)</li>
+                    <li>銀魂° (神威)</li>
+                    <li>コードギアス 亡国のアキト 第1章「翼竜は舞い降りた」(佐山リョウ)</li>
+                    <li>弱虫ペダル (新開隼人)</li>
+                    <li>マギ The kingdom of magic (練紅明)</li>
+                    <li>隠の王 (相澤虹一)</li>
+                    <li>八犬伝―東方八犬異聞― (犬川荘介)</li>
+                    <li>はぐれ勇者の鬼畜美学 (上崎遼平)</li>
+                    <li>灼眼のシャナ (坂井悠二)</li>
+                    <li>ゼロの使い魔 (平賀才人)</li>
+                </ul>
+                <ul>
+                    <li><em>寺島拓篤知名代表作品</em></li>
+                    <li>うたの☆プリンスさまっ♪ マジLOVE1000% (一十木音也)</li>
+                    <li>魔界王子 devils and realist シリーズ (ダンタリオン・ヒューバー)</li>
+                    <li>ログ・ホライズン (シロエ)</li>
+                    <li>デュラララ!! (渡草三郎)</li>
+                    <li>創聖のアクエリオン (アポロ/アポロニアス)</li>
+                    <li>美男高校地球防衛部LOVE! (下呂阿古哉)</li>
+                    <li>神撃のバハムート (アレン)</li>
+                    <li>ムシブギョー (無涯)</li>
+                    <li>会長はメイド様! (更科郁斗)</li>
+                    <li>八犬伝―東方八犬異聞― (犬田小文吾)</li>
+                    <li>はぐれ勇者の鬼畜美学 (ゼクス)</li>
+                    <li>創聖のアクエリオン (アポロ/アポロニアス)</li>
+                    <li>遙かなる時空の中で5 (桐生瞬)</li>
+                    <li>遙かなる時空の中で6 (有馬一)</li>
+                    <li>猛獣使いと王子様 シリーズ (シルビオ)</li>
+                    <li>STORM LOVER (御子柴恭介)</li>
+                </ul>
+            </div>
+            <div id="shfour" class="show">
+                <h4>SWEET x SWEET (2014)</h4>
+                <h5>SWEET x SWEET vol.1 藤原啓治x平田廣明Special talk show in 台灣</h5>
+                <p><em>日期</em> 2014年05月25日 (日)</p>
+                <p><em>地點</em> Neo Studio (台北市松壽路22號5F)</p>
+                <p><em>票價</em> NT$2000元, 1500元</p>
+                <p><em>主辦單位</em> 杜葳廣告股份有限公司</p>
+                <p><em>協辦單位</em> 台灣動漫畫推廣協會</p>
+                <p>為台灣的活動, 特別寫出完全新作的廣播劇劇本, 這麼天大好康的事情, 對於並非日本境內舉辦的活動而言, 原本是海外粉絲們只能夢想、不敢奢望的超級撒必死…</p>
+                <p>「由藤原啓治×平田廣明兩位超級帥大叔」x「完全貼身量造的新作劇本」, 如此夢幻的組合, 將在台灣實現!!</p>
+                <p>不僅僅是演出陣容的組合近乎奇蹟, 連劇本都是新作這點, 就連主辦單位的我們都驚喜萬分, 還請粉絲們、真的千萬不能錯過這樣的機會啊!!</p>
+                <p>劇本現在還在熱烈製作中, 而實際演出時又會用「哪些聲音」呢? (都說這麼白了, 請別再逼我們說下去了, 再說下去就要被滅口啦～) 就還請大家到演出現場準備好大量衛生紙… 擦眼淚? 要擦歡樂的淚水也OK, 不過主要功用當然是拿來擦口水囉!!</p>
+                <p>擔心廣播劇的演出內容無法徹底參透？請各位粉絲不用擔心, 關於這點我們早就想好對策了, 現場會準備中文版本翻譯文, 讓大家在享受美聲演出之餘, 也能同步理解劇情內容喔!!</p>
+            </div>
+            <div id="shthree" class="show">
+                <h4>福山潤 (2014)</h4>
+                <h5>福山潤 一人首腦會議</h5>
+                <p><em>日期</em> 2014年09月14日 (日)</p>
+                <p><em>地點</em> Neo Studio (台北市松壽路22號5F)</p>
+                <p><em>票價</em> NT$1500元</p>
+                <p><em>主辦單位</em> 杜葳廣告股份有限公司</p>
+                <p><em>協辦單位</em> 台灣動漫畫推廣協會</p>
+                <ul>
+                    <li><em>福山潤知名代表作品</em></li>
+                    <li>コードギアス 反逆のルルーシュ (ルルーシュ・ランペルージ)</li>
+                    <li>青の祓魔師 (奥村雪男)</li>
+                    <li>WORKING!! (小鳥遊宗太)</li>
+                    <li>「K」(八田美咲)</li>
+                    <li>中二病でも恋がしたい! (富樫勇太)</li>
+                    <li>血液型くん! (A型)</li>
+                    <li>まおゆう魔王勇者 (勇者)</li>
+                    <li>境界線上のホライゾン (葵・トーリ)</li>
+                    <li>金色のコルダ Blue♪Sky (如月響也)</li>
+                </ul>
+            </div>
+            <div id="shtwo" class="show">
+                <h4>福山潤 (2013)</h4>
+                <h5>福山潤的浪漫派對</h5>
+                <p><em>日期</em> 2013年01月01日 (二)</p>
+                <p><em>地點</em> 國立台灣師範大學公館校區中正堂 (台北市文山區汀州路四段88號)</p>
+                <p><em>票價</em> NT$1200元, 1000元</p>
+                <p><em>連署主辦</em> FancyFrontier 開拓動漫</p>
+                <p><em>宣傳協力</em> aniarc 同人雲</p>
+                <p>喜愛動漫畫的你, 對於福山潤這個名字應該不陌生吧? 無論是表界的王子魯路修、音樂天才志水桂一、死神格雷爾, 或是裡界角色在夜裡給聽眾帶來的甜蜜呢喃......。</p>
+                <p>由於福山潤先生在日本的工作行程滿檔, FF多次進行邀請他前來參加活動卻總因為時間無法配合而飲憾, 現在終於有了轉機!! 福山先生明年初將有一小段私人假期, 他願意挪出私人的休假時間前來台灣與粉絲見面, 並進行與粉絲分享心情的私密Talk Show舞台!!</p>
+                <ul>
+                    <li><em>福山潤知名代表作品</em></li>
+                    <li>コードギアス 反逆のルルーシュ (ルルーシュ・ランペルージ)</li>
+                    <li>青の祓魔師 (奥村雪男)</li>
+                    <li>WORKING!! (小鳥遊宗太)</li>
+                    <li>「K」(八田美咲)</li>
+                </ul>
+            </div>
+            <div id="shone" class="show">
+                <h4>森川社長</h4>
+                <h5>森川社長in台灣 (2013)</h5>
+                <p><em>日期</em> 2013年10月19日 (六)</p>
+                <p><em>地點</em> Neo Studio (台北市松壽路22號5F)</p>
+                <p><em>票價</em> NT$2200元, 1700元</p>
+                <p><em>連署主辦</em> FancyFrontier 開拓動漫</p>
+                <p><em>宣傳協力</em> aniarc 同人雲</p>
+                <p>想近距離感受森川智之那充滿男性魅力的低音嗎? 想感受一下與森川智之共度興奮滿點的相處時刻嗎? 粉絲特別服務活動, 主辦單位也奮力爭取囉～ 請千萬別錯過這個機會喔!</p>
+                <ul>
+                    <li><em>森川智之代表作品</em></li>
+                    <li>戦国BASARA (片倉小十郎)</li>
+                    <li>彩雲国物語 (藍楸瑛)</li>
+                    <li>今天開始魔の自由業! (肯拉德)</li>
+                    <li>闇之末裔 (巽征一郎)</li>
+                    <li>FINAL FANTASY VII ADVENT CHILDREN (賽費羅斯)</li>
+                    <li>犬夜叉 (奈落)</li>
+                    <li>火影忍者 (波風湊)</li>
+                    <li>是 -ZE- (三刀彰伊)</li>
+                    <li>白熊咖啡廳 (貓熊媽媽)</li>
+                </ul>
+            </div>
+        </article>
+
+    </div>
+    </body>
+</html>

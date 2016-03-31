@@ -1,0 +1,283 @@
+.panel {
+    position: fixed;
+    left: -25.625em; /*or width of your navigation panel*/
+    width: 25.625em; /*should match the above value*/
+}
+
+/*  
+    Demo Specific Styles
+    ====================
+*/
+body {
+    font-family: Roboto, Tahoma, Helvetica, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, STXihei, "华文细黑", sans-serif;
+    color: #101820;
+    line-height: 1.5;
+    min-width: 290px;
+}
+.wrap {
+    position: relative;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+/* the hamburger */
+.menu-link {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #545454;
+}
+/* link to change ver */
+#version {
+    float: right;
+    padding: 5px;
+    text-decoration: none;
+    color: #FF6A6A;
+    font-weight: bold;
+    font-family: Roboto, Tahoma, Helvetica, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, STXihei, "华文细黑", sans-serif;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    border: 2px solid #FF6A6A;
+}
+/* styles for slideout menu */
+.panel {
+    background-color: #545454;
+    color: #fff;
+    overflow-x: auto;
+}
+.panel a {
+    text-decoration: none;
+}
+#menuBlock {
+    padding: 20px;
+    margin: 10px 0 0 20px;
+}
+#menuBlock a {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+.mainLinks li {
+    display: inline-block;
+    margin: 5px 0;
+    list-style-type: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.mainLinks a {
+    padding: 3px 6px;
+    color: #FF6A6A;
+    border: 3px solid #FF6A6A;
+}
+.sideLinks li {
+    line-height: 1em;
+}
+.sideLinks li h2 {
+    margin: 0.8em 0;
+}
+.sideLinks li h2 a {
+    margin: 0;
+    padding: 0.3em;
+    font-variant: small-caps;
+    font-size: 0.8em;
+    color: #fff;
+}
+#menu ul {
+    list-style-type: none;
+    float: left;
+    margin: 5px;
+}
+#menu ul ul {
+    width: 100%;
+}
+/* header */
+.wrap h1 {
+    margin-bottom: 0px;
+    line-height: 1em;
+    font-size: 3.5em;
+    color: #545454;
+    line-height: 1em;
+}
+.wrap h3 {
+    font-family: Roboto, Helvetica, Tahoma, sans-serif;
+    font-variant: small-caps;
+    font-size: 1.2em;
+    color: #545454;
+    margin: 3px 0;
+}
+/* index news area */
+.wrap h4 {
+    margin: 0;
+}
+.wrap h4 a {
+    padding: 0 6px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    color: #FF6A6A;
+    border: 3px solid #FF6A6A;
+}
+.wrap ul {
+    margin: 3px 0;
+    padding: 0;
+}
+.wrap li {
+    list-style-type: none;
+}
+.wrap nav ul li a {
+    text-decoration: none;
+    color: #545454;
+    padding: 0 10px;
+}
+em.date {
+    padding: 3px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1em;
+    font-family: Roboto, Helvetica, Tahoma, sans-serif;
+    font-variant: small-caps;
+    color: #545454;
+}
+/* main content subnav area */
+.sublinks {
+    width: 280px;
+    float: left;
+    margin: 1em 1em 1em 0;
+}
+.sublinks li {
+    list-style-type: none;
+}
+.sublinks li a {
+    text-decoration: none;
+    color: #545454;
+    font-weight: bold;
+}
+.subheading {
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #FF6A6A;
+}
+/* multiple-div article */
+article {
+    float: left;
+    width: 100%;
+    margin-top: 5em;
+}
+article div {
+    padding: 10px 10px 10px 0;
+    display: none;
+}
+article h4 {
+    color: #7DCED2;
+    font-size: 1.2em;
+}
+article h5 {
+    margin: 0 0 5px 0;
+    width: 95%;
+    color: #545454;
+    font-size: 1em;
+    border-bottom: 2px solid #545454;
+    text-transform: uppercase;
+}
+article p {
+    margin-top: 0;
+}
+article a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #545454;
+}
+.show {
+    display: none;
+}
+.show ul {
+    margin-bottom: 10px;
+}
+.show.current {
+    display: block;
+}
+article em {
+    font-style: normal;
+    font-weight: bold;
+    color: #7DCED2;
+}
+/* index block nav */
+.wrap ol {
+    max-width: 1000px;
+    padding-left: 0;
+}
+.wrap ol li {
+    position: relative;
+    float: left;
+    list-style-type: none;
+    background-color: #ccc;
+}
+.wrap ol li a {
+    position: relative;
+    float: left;
+    width: 250px;
+    height: 250px;
+    text-decoration: none;
+    color: #fff;
+}
+.wrap ol li h2 {
+    position: relative;
+    top: 80px;
+    text-align: center;
+    font-size: 1.5em;
+}
+#one {
+    background-color: #FA8072;
+}
+#one h2, #two h2, #three h2, #four h2, #seven h2, #eight h2 {
+    position: relative;
+    top: 70px;
+}
+#two {
+    background-color: #187795;
+}
+#three {
+    background-color: #7DCED2;
+}
+#four {
+    background-color: #17A697;
+}
+#five {
+    background-color: #F7B32B;
+}
+#six {
+    background-color: #D93240;
+}
+#seven {
+    background-color: #0D324D;
+}
+#eight {
+    background-color: #403e3c;
+}
+/* footer styles */
+footer {
+    width: 100vw;
+    float: left;
+}
+footer ul {
+    padding-left: 0px;
+}
+footer ul li {
+    display: inline-block;
+    margin: 10px;
+    font-family: Roboto, Tahoma, Helvetica, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, STXihei, "华文细黑", sans-serif;
+    font-size: 14px;
+}
+footer ul li a {
+    font-weight: bold;
+    color: #545454;
+    text-decoration: none;
+}
+em.contact {
+    padding: 3px;
+    font-style: normal;
+    font-weight: bold;
+    color: #FF6A6A;
+    font-size: 16px;
+    border: 3px solid #FF6A6A;
+}
