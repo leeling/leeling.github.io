@@ -1,29 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<link rel="stylesheet" type="text/css" href="styles/main.css">
-<link href='http://fonts.googleapis.com/css?family=Quicksand|Inconsolata|Roboto' rel='stylesheet' type='text/css'>
-<title>
-	yvonne kung | home
-</title>
-</head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="#">home</a></li>
-            <li><a href="html/about.html">about</a></li>
-            <li><a href="html/portfoliov2.html">portfolio</a></li>
-            <li><a href="html/resume.html">resume</a></li>
-            <li><a href="html/contact.html">contact</a></li>
-        </ul>
-    </nav>
-    <section>
-        <h1>hi there.</h1>
-        <p>I'm Yvonne, nice to meet you!</p>
-        <p>I'm an inspiring <em>freelance illustrator/designer</em> interested in <em>game design.</em></p>
-        <p><a href="html/portfoliov2.html">How can I help you?</a></p>
-    </section>
-    <img id="side" src="images/kirschire_small.png" width="608" height="900" alt="sideimage">
-</body>
+<html lang="en">   
+    <head>
+        <meta charset="utf-8">
+        <title>歡迎光臨台灣動漫畫推廣協會</title>
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+        <!--link to css-->
+        <link rel="stylesheet" href="styles/desktop.css" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <!--link to jquery-->
+        <script type="text/javascript" src="scripts/jquery-1.12.1.min.js"></script>
+        <!--link to js-->
+        <script type="text/javascript" src="scripts/desktop.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/0.1.11/slideout.min.js"></script>
+    </head>
+    
+    <body>
+        <a id="version" href="mobile/index.html">切換手機版 mobile version</a>
+          <ol id="social">
+              <li id="plurk"><a href="http://www.plurk.com/fancyfrontier" target="_blank"><img src="images/plogo.png" alt="plurk icon" width="30" height="30" title="開拓動漫官方噗浪" /></a></li>
+              <li id="twitter"><a href="https://twitter.com/fancyfrontier" target="_blank"><img src="images/tlogo.png" alt="twitter icon" width="40" height="40" title="開拓動漫官方 Twitter" /></a></li>
+              <li><a href="https://www.facebook.com/ffrontier" target="_blank"><img src="images/flogo.png" alt="facebook icon" width="25" height="25" title="開拓動漫官方 Facebook粉絲團" /></a></li>
+                </ol>
+        <div id="container">
+        <header>
+            <div id="main">
+            <h1>台灣動漫畫<br />推廣協會</h1>
+                <h3>taiwan animation and comic promoting association</h3>
+                <h4><a href="#">news</a></h4>
+            <nav>
+                <ul>
+                    <li><em class="date">03.01.16</em><a href="http://www.f-2.com.tw/index.php?q=ff/121988" target="_blank"><span class="headline">RF3社團錄取名單公佈</span></a></li>
+                    <li><em class="date">02.26.16</em><a href="http://www.f-2.com.tw/index.php?q=ff/121986" target="_blank"><span class="headline">PF24社團錄取名單公佈</span></a></li>
+                    <li><em class="date">02.25.16</em><a href="http://www.f-2.com.tw/index.php?q=events_other/121984" target="_blank"><span class="headline">「特別聲優活動「夢王國與沉睡中的100位王子殿下 夢王子Voice Show」」 入場動線及重要規則提醒</span></a></li>
+                    <li><em class="date">02.19.16</em><a href="http://www.f-2.com.tw/index.php?q=events_other/121983" target="_blank"><span class="headline">「特別聲優活動「夢王國與沉睡中的100位王子殿下 夢王子Voice Show」」 禮物受理及場內規則公告</span></a></li>
+                    <li><em class="date">02.18.16</em><a href="http://www.f-2.com.tw/index.php?q=events_other/121982" target="_blank"><span class="headline">「特別聲優活動「夢王國與沉睡中的100位王子殿下 夢王子Voice Show」」 人形立牌合照活動及謝絕花籃公告</span></a></li>
+                </ul>
+            </nav>
+            </div>
+        </header>
+            <ol>
+                <li><a href="html/section.html#page4" id="one" data-img="oneimg" title="綜合同人販售會、原創主題販售會、模型主題販售會"><h2>動漫文創<br />活動</h2><img class="hover" src="images/wenchuang.jpg" alt="oneimg" id="oneimg" /></a></li>
+                
+                
+                <li><a href="html/section.html#page3" id="two" data-img="twoimg" title="動漫畫情報雜誌、動漫研究專書、動漫精選畫冊"><h2>動漫期刊<br />專書出版</h2><img class="hover" src="images/magazine.jpg" alt="twoimg" id="twoimg" /></a></li>
+                
+                <li><a href="html/section.html#page6" id="three" data-img="threeimg" title="國際漫畫研習營、世界漫畫家大會論壇"><h2>動漫學術<br />講座</h2><img class="hover" src="images/workshop.jpg" alt="threeimg" id="threeimg" /></a></li>
+                
+                <li><a href="html/section.html#page5" id="four" data-img="fourimg" title="原創交響音樂會、海內外聲優歌手演唱會"><h2>動漫演出<br />活動</h2><img class="hover" src="images/concert.jpg" alt="fourimg" id="fourimg" /></a></li>
+                
+                <li><a href="html/section.html#page2" id="five" data-img="fiveimg" title="地址與聯絡方式"><h2>聯絡我們</h2><img class="hover" src="images/contact.jpg" alt="fiveimg" id="fiveimg" /></a></li>
+                
+                <li><a href="html/section.html#page1" id="six" data-img="siximg" title="台灣動漫畫推廣協會是什麼?"><h2>關於我們</h2><img class="hover" src="images/intro.jpg" alt="siximg" id="siximg" /></a></li>
+                
+                <li><a href="html/section.html#page8" id="seven" data-img="sevenimg" title="原創漫畫競賽、Cosplay競賽、人才培育專案"><h2>動漫主題<br />競賽</h2><img class="hover" src="images/contest.jpg" alt="sevenimg" id="sevenimg" /></a></li>
+                
+                <li><a href="html/section.html#page7" id="eight" data-img="eightimg" title="跨界藝術展、插畫展、模型展"><h2>動漫主題<br />策展</h2><img class="hover" src="images/gallery.jpg" alt="eightimg" id="eightimg" /></a></li>
+                
+            </ol>
+        </div>
+        <footer>
+            <ul>
+                <li><em class="contact">會址</em> <a href="https://www.google.com.tw/maps/place/@25.0296179,121.551244,19z/" target="_blank">10680台北市大安區安和路二段78號10F-2</a></li>
+                <li><em class="contact">聯絡電話</em> 886-2-2703-5310</li>
+                <li><em class="contact">傳真</em> +886-2-2703-9903</li>
+                <li><em class="contact">活動官網</em> <a href="http://www.f-2.com.tw/" target="_blank">www.f-2.com.tw</a></li>
+                <li><em class="contact">信箱</em> <a href="mailto:pr@f-2.com.tw">pr@f-2.com.tw</a></li>
+            </ul>
+        </footer>
+    </body>
 </html>
