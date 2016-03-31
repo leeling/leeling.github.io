@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+    overflow-y: scroll;
+    background-color: #EEE9E9;
+}
+/* Scrollbar */ 
+::-webkit-scrollbar{width: 12px;}
+
+::-webkit-scrollbar-thumb{background-color:rgb(219, 219, 219); border-radius: 0;}
+::-webkit-scrollbar-thumb:hover{background-color: #545454;}
+
+::-webkit-scrollbar-track{background-color:rgb(255, 255, 255);}
+/* End Scrollbar */
+ol#social {
+    width: 100%;
+    height: 40px;
+    margin: 2em 0.5em 0 0;
+}
+ol#social li, ol#social li a {
+    height: 40px;
+    width: 40px;
+    display: inline;
+}
+li#plurk a {
+    margin-top: -0.1em;
+}
+li#twitter a {
+    margin: -0.4em 0 0 -0.6em;
+}
+header {
+    text-align: center;
+    background-color: rgba(255,255,255,0.8);
+    padding: 0.5em 0.5em 1em 0.5em;
+    margin-bottom: 1em;
+}
+#container {
+    text-align: center;
+}
+h1 {
+    font-family: Tahoma, Arial, Helvetica, 宋体, SimSun, STXihei, "华文细黑", sans-serif;
+    font-size: 3.5em;
+    color: #fff;
+    width: 95%;  
+    margin: 2em 0 0 2.5%;
+    text-shadow: 2px 2px 5px #000;
+}
+h3 {
+    font-family: Roboto, Helvetica, Tahoma, sans-serif;
+    font-variant: small-caps;
+    color: #545454;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+em.date {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1em;
+    font-family: Roboto, Helvetica, Tahoma, sans-serif;
+    font-variant: small-caps;
+    color: #FF6A6A;
+    padding: 0.5em;
+}
+nav {
+    margin: 1em 0 1em 0;
+}
+nav ul li {
+    margin-bottom: 1em;
+}
+nav ul li, nav ul li a {
+    list-style-type: none;
+    text-decoration: none;
+    text-align: left;
+    font-family: Roboto, Helvetica, Tahoma, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, STXihei, "华文细黑", sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+nav ul li a {
+    color: #fff;
+    font-weight: bold;
+    background-color: #545454;
+    padding: 0.3em;
+}
+#main h4 a {
+    text-decoration: none;
+    font-family: Roboto, Helvetica, Tahoma, sans-serif;
+    font-variant: small-caps;
+    color: #FF6A6A;
+    padding: 0 50vw 0 40vw;
+    font-size: 1.5em;
+}
+ol li a {
+    color: #fff;
+    color: #fff;
+    width: 47vw;
+    height: 47vw;
+    display: block;
+    position: relative;
+    list-style-type: none;
+    text-decoration: none;
+    float: right;
+}
+ol li a#one {
+    background-color: #FA8072;
+    margin-top: 1.1em;
+}
+ol li a#two {
+    background-color: #187795;
+}
+ol li a#three {
+    background-color: #7DCED2;
+}
+ol li a#four {
+    background-color: #17A697;
+}
+ol li a#five {
+    background-color: #F7B32B;
+}
+ol li a#six {
+    background-color: #D93240;
+}
+ol li a#seven {
+    background-color: #0D324D;
+}
+ol li a#eight {
+    background-color: #403e3c;
+}
+h2 {
+    position: relative;
+    top: 15vw;
+    left: 2vw;
+    width: 90%;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px #000;
+    color: #fff;
+    font-family: Tahoma, Arial, Helvetica, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, STXihei, "华文细黑", sans-serif;
+    font-size: 1.5em;
+    font-weight: 100;
+}
+#five h2, #six h2 {
+    top: 18vw;
+}
+img.hover {
+    visibility: hidden;   
+}
+footer {
+    margin: 1em;
+}
+footer ul li {
+    display: inline-block;
+    padding: 1em 2em 1em 2em;
+    font-family: Roboto, Tahoma, Helvetica, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, STXihei, "华文细黑", sans-serif;
+    font-size: 14px;
+}
+footer ul li a {
+    font-weight: bold;
+    color: #17A697;
+    text-decoration: none;
+}
+em.contact {
+    font-style: normal;
+    font-weight: bold;
+    color: #FF7256;
+    font-size: 16px;
+}

@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+    background-color: #EEE9E9;
+    text-align: center;
+}
+/* Scrollbar */ 
+::-webkit-scrollbar{width: 12px;}
+
+::-webkit-scrollbar-thumb{background-color:rgb(219, 219, 219); border-radius: 0;}
+::-webkit-scrollbar-thumb:hover{background-color: #545454;}
+
+::-webkit-scrollbar-track{background-color:rgb(255, 255, 255);}
+/* End Scrollbar */
+h1 {
+    margin: 2em 0 0 15%;
+    width: 70%;
+    color: #fff;
+    font-family: Tahoma, Arial, Helvetica, 宋体, SimSun, STXihei, "华文细黑", sans-serif;
+    font-size: 3.5em;
+    text-shadow: 2px 2px 5px #000;
+}
+h4 {
+    color: #545454;
+    font-family: Roboto, Tahoma, Helvetica;
+    font-variant: small-caps;
+    font-size: 20px;
+}
+div#container {
+    height: 100vw;
+    margin: 1em 0 2em 0;
+    background-color: rgba(255,255,255,0.8);
+    overflow-y: scroll;
+    text-align: left;
+}
+h2 {
+    width: 80%;
+    color: #545454;
+    font-family: Roboto, Tahoma, Helvetica, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, STXihei, "华文细黑", sans-serif;
+    font-variant: small-caps;
+    font-size: 50px;
+    margin: 30px 0 20px 30px;
+    border-bottom: 5px solid #ccc;
+    text-align: left;
+}
+#container section {
+    width: 400px;
+    margin: 0 10px 10px 30px;
+    color: #545454;
+    font-size: 18px;
+    font-family: Roboto, Tahoma, Helvetica, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, STXihei, "华文细黑", sans-serif;
+}
+#container section p {
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+#container section ul {
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+ul li {
+    list-style-type: none;
+}
+ul li em {
+    font-style: normal;
+    font-weight: bold;
+    color: #FA8072;
+}
+.gray li {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.gray li em {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: #545454;
+}
+ul li a {
+    text-decoration: none;
+    color: #17A697;
+    font-weight: bold;
+}
+.subtext {
+    font-size: 14px;
+    line-height: 18px;
+}
+ul li img {
+    margin: 0 5px -5px 0;
+}
+#twit {
+    margin: 0 1px -10px -5px;
+}
+#sideimg {
+    width: 20em;
+    height: 20em;
+    margin: 1em 0 1em 0;
+}
+#button {
+    color: #fff;
+    background-color: #17A697;
+    padding: 10px;
+    position: relative;
+    margin-top: 100px;
+    text-decoration: none;
+    font-family: Roboto, Tahoma, Helvetica, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, STXihei, "华文细黑", sans-serif;
+    font-variant: small-caps;
+}
